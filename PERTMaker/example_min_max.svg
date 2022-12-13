@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 444" version="1.2" baseProfile="tiny">
+<title>example_min_max</title>
+<desc>
+Generated with PERT Maker.
+Version: Experimental - Build: 07e6e910
+You can find this app here: https://github.com/Synell/PERT-Maker/releases/latest
+</desc>
+<defs>
+</defs>
+<g fill="none" stroke="#ffffffff" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel">
+
+<rect x="0" y="0" width="1130" height="444" fill="#00000000" stroke="none" /><g fill="none" stroke="#ffffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">
+<circle cx="80" cy="230" r="40" />
+<polyline fill="none" vector-effect="none" points="80,230 80,190" />
+<polyline fill="none" vector-effect="none" points="40,230 120,230" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="77" y="250" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">1</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="61" y="216" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">0</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="93" y="216" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">0</text>
+<polyline fill="none" vector-effect="none" points="112,207 261,102" />
+<polyline fill="none" vector-effect="none" points="261,102 251,104" />
+<polyline fill="none" vector-effect="none" points="261,102 256,111" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="175" y="138" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">A 6</text>
+<polyline fill="none" vector-effect="none" points="113,251 250,342" />
+<polyline fill="none" vector-effect="none" points="250,342 245,333" />
+<polyline fill="none" vector-effect="none" points="250,342 240,340" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="192" y="280" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">B 5</text>
+<circle cx="294" cy="80" r="40" />
+<polyline fill="none" vector-effect="none" points="294,80 294,40" />
+<polyline fill="none" vector-effect="none" points="254,80 334,80" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="291" y="100" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">2</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="275" y="66" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">6</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="307" y="66" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">8</text>
+<polyline fill="none" vector-effect="none" points="333,80 517,83" />
+<polyline fill="none" vector-effect="none" points="517,83 508,79" />
+<polyline fill="none" vector-effect="none" points="517,83 507,87" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="425" y="62" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">C 4</text>
+</g>
+
+<g fill="none" stroke="#ffffffff" stroke-opacity="1" stroke-dasharray="10,10" stroke-dashoffset="0" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">
+<polyline fill="none" vector-effect="none" points="322,108 544,328" />
+</g>
+
+<g fill="none" stroke="#ffffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">
+<polyline fill="none" vector-effect="none" points="544,328 541,319" />
+<polyline fill="none" vector-effect="none" points="544,328 535,325" />
+<circle cx="284" cy="364" r="40" />
+<polyline fill="none" vector-effect="none" points="284,364 284,324" />
+<polyline fill="none" vector-effect="none" points="244,364 324,364" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="281" y="384" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">3</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="265" y="350" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">5</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="297" y="350" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">5</text>
+<polyline fill="none" vector-effect="none" points="323,363 533,357" />
+<polyline fill="none" vector-effect="none" points="533,357 523,353" />
+<polyline fill="none" vector-effect="none" points="533,357 524,362" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="428" y="340" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">D 6</text>
+<circle cx="557" cy="84" r="40" />
+<polyline fill="none" vector-effect="none" points="557,84 557,44" />
+<polyline fill="none" vector-effect="none" points="517,84 597,84" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="554" y="104" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">4</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="535" y="70" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">10</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="567" y="70" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">12</text>
+<polyline fill="none" vector-effect="none" points="596,83 760,81" />
+<polyline fill="none" vector-effect="none" points="760,81 750,77" />
+<polyline fill="none" vector-effect="none" points="760,81 750,85" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="678" y="62" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">E 5</text>
+<circle cx="573" cy="357" r="40" />
+<polyline fill="none" vector-effect="none" points="573,357 573,317" />
+<polyline fill="none" vector-effect="none" points="533,357 613,357" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="570" y="377" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">5</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="551" y="343" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">11</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="583" y="343" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">11</text>
+<polyline fill="none" vector-effect="none" points="598,326 774,111" />
+<polyline fill="none" vector-effect="none" points="774,111 765,116" />
+<polyline fill="none" vector-effect="none" points="774,111 772,121" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="671" y="206" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">F 6</text>
+<circle cx="800" cy="81" r="40" />
+<polyline fill="none" vector-effect="none" points="800,81 800,41" />
+<polyline fill="none" vector-effect="none" points="760,81 840,81" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="797" y="101" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">6</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="778" y="67" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">17</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="810" y="67" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">17</text>
+<polyline fill="none" vector-effect="none" points="837,95 1012,164" />
+<polyline fill="none" vector-effect="none" points="1012,164 1005,157" />
+<polyline fill="none" vector-effect="none" points="1012,164 1002,165" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="932" y="111" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">G 4</text>
+<circle cx="1050" cy="179" r="40" />
+<polyline fill="none" vector-effect="none" points="1050,179 1050,139" />
+<polyline fill="none" vector-effect="none" points="1010,179 1090,179" />
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="1047" y="199" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">7</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="1028" y="165" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">21</text>
+<text fill="#ffffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="1060" y="165" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">21</text>
+</g>
+
+<g fill="none" stroke="#ffffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Segoe UI" font-size="9" font-weight="400" font-style="normal">
+</g>
+</g>
+</svg>
