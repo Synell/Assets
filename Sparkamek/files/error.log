@@ -1,0 +1,4243 @@
+### tools/cw/mwcceppc.exe Compiler:
+#      In: src\boss.h
+#    From: tmp\fasthack.cpp
+# -------------------------
+#      24: class daBoss : public dEn_c {
+#   Error: ^^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#      31: };
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#      36: void SetupKameck(daBoss* actor, daKameckDemo *Kameck);
+#   Error:                  ^^^^^^
+#   undefined identifier 'daBoss'
+### tools/cw/mwcceppc.exe Compiler:
+#      37: void CleanupKameck(daBoss* actor, daKameckDemo *Kameck);
+#   Error:                                   ^^^^^^^^^^^^
+#   undefined identifier 'daKameckDemo'
+### tools/cw/mwcceppc.exe Compiler:
+#      38: bool GrowBoss(daBoss* actor, daKameckDemo *Kameck, float initialScale, float endScale, float yPosModifier, int timer);
+#   Error:                     ^
+#   '(' expected
+### tools/cw/mwcceppc.exe Compiler:
+#      39: void OutroSetup(daBoss* actor);
+#   Error:                               ^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#      40: bool ShrinkBoss(daBoss *actor, Vec *pos, float scale, int timer);
+#   Error:                                                                 ^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#      41: void BossExplode(daBoss* actor, Vec *pos);
+#   Error:                                          ^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#      42: void PlayerVictoryCries(daBoss* actor);
+#   Error:                                       ^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    File: tmp\fasthack.cpp
+# -------------------------
+#    3713: void DamagePlayer(dEn_c *actor, ActivePhysics *apThis, ActivePhysics *apOther) {
+#   Error: ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3715:  actor->dEn_c::playerCollision(apThis, apOther);
+#   Error:  ^^^^^
+#   undefined identifier 'actor'
+### tools/cw/mwcceppc.exe Compiler:
+#    3716:  actor->_vf220(apOther->owner);
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3719:  actor->deathInfo.isDead = 0;
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3720:  actor->flags_4FC |= (1<<(31-7));
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3721:  if (apOther->owner->which_player == 255 ) {
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3727:  else {
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3730: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3733: void SetupKameck(daBoss *actor, daKameckDemo *Kameck) {
+#   Error:                                 ^^^^^^^^^^^^
+#   undefined identifier 'daKameckDemo'
+### tools/cw/mwcceppc.exe Compiler:
+#    3736:  StopBGMMusic();
+#   Error:  ^^^^^^^^^^^^
+#   undefined identifier 'StopBGMMusic'
+### tools/cw/mwcceppc.exe Compiler:
+#    3739:  dStage32C_c::instance->freezeMarioBossFlag = 1;
+#   Error:               ^^^^^^^^
+#   undefined identifier 'instance'
+### tools/cw/mwcceppc.exe Compiler:
+#    3740:  WLClass::instance->_4 = 4;
+#   Error:           ^^^^^^^^
+#   undefined identifier 'instance'
+### tools/cw/mwcceppc.exe Compiler:
+#    3741:  WLClass::instance->_8 = 0;
+#   Error:           ^^^^^^^^
+#   undefined identifier 'instance'
+### tools/cw/mwcceppc.exe Compiler:
+#    3743:  MakeMarioEnterDemoMode();
+#   Error:  ^^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'MakeMarioEnterDemoMode'
+### tools/cw/mwcceppc.exe Compiler:
+#    3746:  Vec pos = (Vec){actor->pos.x - 124.0, actor->pos.y + 104.0, 3564.0};
+#   Error:                       ^^
+#   '(' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3750:  actor->Kameck = (daKameckDemo*)actor->createChild(KAMECK_FOR_CASTLE_DEMO, (dStageActor_c*)actor, 0, &pos, &rot, 0);
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3751:  actor->Kameck->doStateChange(&daKameckDemo::StateID_DemoWait);
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3753: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3756: void CleanupKameck(daBoss *actor, daKameckDemo *Kameck) {
+#   Error:                                   ^^^^^^^^^^^^
+#   undefined identifier 'daKameckDemo'
+### tools/cw/mwcceppc.exe Compiler:
+#    3758:  dStage32C_c::instance->freezeMarioBossFlag = 0;
+#   Error:               ^^^^^^^^
+#   undefined identifier 'instance'
+### tools/cw/mwcceppc.exe Compiler:
+#    3759:  WLClass::instance->_8 = 1;
+#   Error:           ^^^^^^^^
+#   undefined identifier 'instance'
+### tools/cw/mwcceppc.exe Compiler:
+#    3761:  MakeMarioExitDemoMode();
+#   Error:  ^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'MakeMarioExitDemoMode'
+### tools/cw/mwcceppc.exe Compiler:
+#    3762:  StartBGMMusic();
+#   Error:  ^^^^^^^^^^^^^
+#   undefined identifier 'StartBGMMusic'
+### tools/cw/mwcceppc.exe Compiler:
+#    3764:  actor->Kameck->Delete(1);
+#   Error:       ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3765: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3768: bool GrowBoss(daBoss *actor, daKameckDemo *Kameck, float initialScale, float endScale, float yPosModifier, int timer) {
+#   Error:              ^
+#   data object 'GrowBoss' redefined
+### tools/cw/mwcceppc.exe Compiler:
+#    3770:  actor->Kameck->doStateChange(&daKameckDemo::StateID_DemoSt2); }
+#   Error:                                                                 ^^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3772:  float scaleSpeed, yPosScaling;
+#   Error:                                ^^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3774:  (timer == 150) { PlaySound(actor, SE_BOSS_IGGY_WANWAN_TO_L);  }
+#   Error:                                                                 ^^
+#   ')' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3777:   scaleSpeed = (endScale -initialScale) / 80.0;
+#   Error:   ^^^^^^^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#    3781:   modifier = initialScale + ((timer - 150) * scaleSpeed);
+#   Error:   ^^^^^^^^
+#   undefined identifier 'modifier'
+### tools/cw/mwcceppc.exe Compiler:
+#    3781:   modifier = initialScale + ((timer - 150) * scaleSpeed);
+#   Error:            ^
+#   identifier 'modifier' redeclared as 'int'
+### tools/cw/mwcceppc.exe Compiler:
+#    3779:   float modifier;
+#   Error:                 ^
+#   identifier 'modifier' was originally declared as 'float'
+### tools/cw/mwcceppc.exe Compiler:
+#    3783:   actor->scale = (Vec){modifier, modifier, modifier};
+#   Error:        ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3784:   actor->pos.y = actor->pos.y + (yPosModifier/80.0);
+#   Error:        ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3785:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3787:  if (timer == 360) {
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3798:  if (timer > 420) { return true; }
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3799:  return false;
+#   Error:  ^^^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3800: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3804:  actor->removeMyActivePhysics();
+#   Error:         ^^^^^^^^^^^^^^^^^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3806:  StopBGMMusic();
+#   Error:               ^
+#   function call 'StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#    3819:  actor->scale.x -= scale / 80.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3820:  actor->scale.y -= scale / 80.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3821:  actor->scale.z -= scale / 80.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3831:  if (actor->scale.x < 0) { return true; }
+#   Error:             ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3837:  actor->scale.x = 0.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3838:  actor->scale.y = 0.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3839:  actor->scale.z = 0.0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3842:  actor->dying = 1;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3843:  actor->timer = 0;
+#   Error:         ^^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#    3849:  BossGoalForAllPlayers();
+#   Error:                        ^
+#   undefined identifier 'BossGoalForAllPlayers'
+### tools/cw/mwcceppc.exe Compiler:
+#    5758:   enteredNode();
+#   Error:               ^
+#   function call '[dWMHud_c].enteredNode()' does not match
+#   'dWMHud_c::enteredNode(dKPNode_s *)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#    6353:  panToPosition(desiredCentreX, desiredCentreY, desiredZoomLevel);
+#   Error:                                                                ^
+#   function call '[dWorldCamera_c].panToPosition({lval} float, {lval} float, {lval} float)' does not match
+#   'dWorldCamera_c::panToPosition(float, float, float, bool)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#    8064:     nextPath = nextNode->getOppositeExitTo(nextPath);
+#   Error:                                                    ^
+#   function call '[dKPNode_s].getOppositeExitTo({lval} dKPPath_s *)' does not match
+#   'dKPNode_s::getOppositeExitTo(dKPPath_s *, bool)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#    8312:      STD_ZOOM);
+#   Error:              ^
+#   function call '[dWorldCamera_c].panToPosition({lval} short, int, float)' does not match
+#   'dWorldCamera_c::panToPosition(float, float, float, bool)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#    8812: f (!dScKoopatlas_c::instance->warpZoneHacks && to->getExitCount() > 2 && to->getAvailableExitCount() == 2)
+#   Error:                                                                 ^
+#   function call '[dKPNode_s].getExitCount()' does not match
+#   'dKPNode_s::getExitCount(bool)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#    8920:     dWMHud_c::instance->enteredNode();
+#   Error:                                     ^
+#   function call '[dWMHud_c].enteredNode()' does not match
+#   'dWMHud_c::enteredNode(dKPNode_s *)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   10298:    showSecretMessage(L"Hard Mode", linesOn, lineCountOn);
+#   Error:                                                        ^
+#   function call '[dWMStarCoin_c].showSecretMessage({lval} const wchar_t[10], {lval} const wchar_t *[9], {lval} const
+#   int)' does not match
+#   'dWMStarCoin_c::showSecretMessage(const wchar_t *, const wchar_t **, int, const wchar_t **, int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   10302:    showSecretMessage(L"Classic Mario", linesOff, lineCountOff);
+#   Error:                                                              ^
+#   function call '[dWMStarCoin_c].showSecretMessage({lval} const wchar_t[14], {lval} const wchar_t *[2], {lval} const
+#   int)' does not match
+#   'dWMStarCoin_c::showSecretMessage(const wchar_t *, const wchar_t **, int, const wchar_t **, int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   10336:      showSecretMessage(L"Nice!", linesOn, lineCountOn);
+#   Error:                                                      ^
+#   function call '[dWMStarCoin_c].showSecretMessage({lval} const wchar_t[6], {lval} const wchar_t *[9], {lval} const
+#   int)' does not match
+#   'dWMStarCoin_c::showSecretMessage(const wchar_t *, const wchar_t **, int, const wchar_t **, int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   10340:      showSecretMessage(L"Nice!", linesOff, lineCountOff);
+#   Error:                                                        ^
+#   function call '[dWMStarCoin_c].showSecretMessage({lval} const wchar_t[6], {lval} const wchar_t *[2], {lval} const
+#   int)' does not match
+#   'dWMStarCoin_c::showSecretMessage(const wchar_t *, const wchar_t **, int, const wchar_t **, int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   11036:   StopBGMMusic();
+#   Error:                ^
+#   function call 'StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   11038:   MakeMarioEnterDemoMode();
+#   Error:                          ^
+#   function call 'MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   14139:     StopBGMMusic();
+#   Error:                  ^
+#   function call '[dPalaceDude_c].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   14697:   dMsgBoxManager_c::instance->showMessage(settings);
+#   Error:                                                   ^
+#   function call '[dMsgBoxManager_c].showMessage({lval} unsigned int)' does not match
+#   'dMsgBoxManager_c::showMessage(int, bool, int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   15705: class daFuzzyBear_c : public daBoss {
+#   Error:                              ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   15778: is, ActivePhysics *apOther) { DamagePlayer(this, apThis, apOther); }
+#   Error:                                                                 ^
+#   function call '[daFuzzyBear_c].DamagePlayer(daFuzzyBear_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does
+#   not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15779: is, ActivePhysics *apOther) { DamagePlayer(this, apThis, apOther); }
+#   Error:                                                                 ^
+#   function call '[daFuzzyBear_c].DamagePlayer(daFuzzyBear_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does
+#   not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15786:  PlaySound(this, SE_BOSS_KOOPA_FIRE_DISAPP);
+#   Error:                                           ^
+#   function call '[daFuzzyBear_c].PlaySound(daFuzzyBear_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15790:  if (this->damage > 14) { doStateChange(&StateID_Outro); }
+#   Error:                                                       ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15810:  this->counter_504[apOther->owner->which_player] = 0;
+#   Error:        ^^^^^^^^^^^
+#   undefined identifier 'counter_504'
+### tools/cw/mwcceppc.exe Compiler:
+#   15847:  this->pos.x += blah->speed.x;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   15853:  PlaySound(this, SE_EMY_BLOW_PAKKUN_DOWN);
+#   Error:                                         ^
+#   function call '[daFuzzyBear_c].PlaySound(daFuzzyBear_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15856:  if (this->damage > 14) { doStateChange(&StateID_Outro); }
+#   Error:                                                       ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15857:  else { doStateChange(&StateID_RolyPoly); }
+#   Error:                                        ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15870:  PlaySound(this, SE_EMY_BIG_PAKKUN_DAMAGE_1);
+#   Error:                                            ^
+#   function call '[daFuzzyBear_c].PlaySound(daFuzzyBear_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15876:  if (this->damage > 14) { doStateChange(&StateID_Outro); }
+#   Error:                                                       ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15877:  else { doStateChange(&StateID_RolyPoly); }
+#   Error:                                        ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15888:  DamagePlayer(this, apThis, apOther);
+#   Error:                                    ^
+#   function call '[daFuzzyBear_c].DamagePlayer(daFuzzyBear_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does
+#   not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   15924:  this->BigBossFuzzyBear = this->settings >> 28;
+#   Error:                                 ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   15925:  this->scale = (Vec){1.0, 1.0, 1.0};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   15947:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   15948:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   15951:  this->pos.y = this->pos.y + 6;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   15952:  this->rot.x = 0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   15953:  this->rot.y = 0; // Y is horizontal axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   15954:  this->rot.z = 0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   15955:  this->direction = 0; // Heading left.
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   15959:  this->speed.x = 0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   15960:  this->LaunchSpeedShort = ((this->settings >> 20) & 0xF) * 10.0;
+#   Error:                                   ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   15961:  this->LaunchSpeedHigh = ((this->settings >> 24) & 0xF) * 10.0;
+#   Error:                                  ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   15963:  this->AreaWidthRight = this->settings & 0xFF;
+#   Error:                               ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   15964:  this->AreaWidthLeft = (this->settings >> 8) & 0xFF;
+#   Error:                               ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   15966:  this->initialPos = this->pos;
+#   Error:                           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   15973:  this->disableEatIn();
+#   Error:        ^^^^^^^^^^^^
+#   undefined identifier 'disableEatIn'
+### tools/cw/mwcceppc.exe Compiler:
+#   15978:  doStateChange(&StateID_Grow);
+#   Error:                             ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   15989:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   16008:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16009:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16011:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16012:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16022:  SetupKameck(this, Kameck);
+#   Error:                          ^
+#   function call '[daFuzzyBear_c].SetupKameck(daFuzzyBear_c *, {lval} daKameckDemo *)' does not match
+#   'SetupKameck(int)'
+#   'SetupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16023:  this->scale = (Vec){1.0, 1.0, 1.0};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16032:   ret = GrowBoss(this, Kameck, 1.0, 3.0, 25, this->timer); }
+#   Error:                                                         ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   16034:   ret = GrowBoss(this, Kameck, 1.0, 2.5, 18, this->timer); }
+#   Error:                                                         ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   16036:  if (ret) { doStateChange(&StateID_Bounce); }
+#   Error:                                          ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16040:  this->Baseline = this->pos.y;
+#   Error:                         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16042:  CleanupKameck(this, Kameck);
+#   Error:                            ^
+#   function call '[daFuzzyBear_c].CleanupKameck(daFuzzyBear_c *, {lval} daKameckDemo *)' does not match
+#   'CleanupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16051:  if (this->direction == 0) { this->speed.x = 1.0; }
+#   Error:            ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   16051:  if (this->direction == 0) { this->speed.x = 1.0; }
+#   Error:                                                    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16052:  else       { this->speed.x = -1.0; }
+#   Error:                                      ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16054:  if (this->storeSpeed != 0) { this->speed.x = this->storeSpeed; }
+#   Error:  ^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   16054: if (this->storeSpeed != 0) { this->speed.x = this->storeSpeed; }
+#   Error:                                                                 ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16056:  this->timer = 20;
+#   Error:  ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   16076:  if (this->falldown == 1) { this->speed.x = 0; this->timer = 0; }
+#   Error:                                   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16081:  if (this->pos.x <= this->initialPos.x - ((17 * 16.0) + wallDistance))  { // Hit left wall, head right.
+#   Error:            ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16084:   this->pos.x = this->pos.x + 1.0; }
+#   Error:                                     ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16086:  if (this->pos.x >= this->initialPos.x + ((7.5 * 16.0) - wallDistance))  { // Hit right wall, head left.
+#   Error:  ^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   16089:   this->pos.x = this->pos.x - 1.0; }
+#   Error:                                     ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16094:  if (this->pos.y < this->Baseline) {
+#   Error:  ^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   16094:  if (this->pos.y < this->Baseline) {
+#   Error:                                     ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16099:   if (this->speed.x != 0) {
+#   Error:             ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16100:    this->storeSpeed = this->speed.x; }
+#   Error:                                       ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16102:   this->speed.y = 0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16109:    this->scale.y = modifier;
+#   Error:          ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16110:    this->pos.y = this->pos.y + (scaleDown/10.0);
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16111:    if (this->pos.y > this->Baseline) { this->pos.y = this->Baseline - 1.0; }
+#   Error:              ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16111: >pos.y > this->Baseline) { this->pos.y = this->Baseline - 1.0; }
+#   Error:                                                                 ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16113:   else if (this->timer == 10) {
+#   Error:   ^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16116:   }
+#   Error:    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16119:    modifier = (scaleBase - 1.0) + ((this->timer - 10) * 0.1);
+#   Error:                                                              ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16122:    this->pos.y = this->pos.y + (scaleUp/10.0);
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16123:    if (this->pos.y > this->Baseline) { this->pos.y = this->Baseline - 1.0; }
+#   Error:              ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16123: >pos.y > this->Baseline) { this->pos.y = this->Baseline - 1.0; }
+#   Error:                                                                 ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16132:    if (randChoice == 0) { doStateChange(&StateID_Wait); }
+#   Error:                                                      ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16135:    if (randChoice == 0) { this->speed.y = 8.0; }
+#   Error:                                 ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16136:    else { this->speed.y = 6.0; }
+#   Error:                 ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16139:    this->pos.y = this->Baseline + 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16141:    this->speed.x = this->storeSpeed;
+#   Error:          ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16145:  else { this->speed.y = this->speed.y - 0.1; } // Gravity
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16148:  this->HandleXSpeed();
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16149:  this->HandleYSpeed();
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16151:  this->UpdateObjectPosBasedOnSpeedValuesReal();
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16153: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16297:   this->direction = 1;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   16298:   this->speed.x = 12.0; }
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16300:   this->direction = 0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   16301:   this->speed.x = -12.0; }
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16303:  this->speed.y = 0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16305:  this->RolyPos = this->pos;
+#   Error:                        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16308:   this->scale = (Vec){2.5, 2.5, 2.5};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16311:   this->scale = (Vec){3.0, 3.0, 3.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16319:  PlaySound(this, SE_OBJ_TEKKYU_G_CRASH);
+#   Error:                                       ^
+#   function call '[daFuzzyBear_c].PlaySound(daFuzzyBear_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16321:  if (this->pos.y > this->Baseline) { this->pos.y -= 2.0; }
+#   Error:            ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16321:  if (this->pos.y > this->Baseline) { this->pos.y -= 2.0; }
+#   Error:                                                           ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16323:   this->pos.y = this->Baseline - 1.0;
+#   Error:                                      ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16328:    SpawnEffect("Wm_ob_icehitsmk", 0, &tempPos, &(S16Vec){0,0,0}, &(Vec){0.4, 0.4, 0.4});
+#   Error:                                       ^^^^^^^
+#   undefined identifier 'tempPos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16332:  if (this->direction == 0) { // is even
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16334:  else { // is odd
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16337:  if (BigBossFuzzyBear == 0) {
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16340:  else {
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16344:  this->timer += 1;
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16346:  if (this->pos.x <= this->initialPos.x - ((17 * 16.0) + wallDistance))  { // Hit left wall, head right.
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16353:  if (this->pos.x >= this->initialPos.x + ((7.5 * 16.0) - wallDistance))  { // Hit right wall, head left.
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16361:  if (this->direction == 1) { this->rot.z = this->rot.z - 0x400; }
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16362:  else        { this->rot.z = this->rot.z + 0x400; }
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16364:  if (this->RolyBounces == 2) {
+#   Error:  ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16378:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16395:   doStateChange(&StateID_Bounce);
+#   Error:                                ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16407:  OutroSetup(this);
+#   Error:                 ^
+#   function call '[daFuzzyBear_c].OutroSetup(daFuzzyBear_c *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16415:   if (this->timer == 60) { PlayerVictoryCries(this); }
+#   Error:                                                   ^
+#   function call '[daFuzzyBear_c].PlayerVictoryCries(daFuzzyBear_c *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16422:  ret = ShrinkBoss(this, &this->pos, 2.75, this->timer);
+#   Error:                                ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16425:   BossExplode(this, &this->pos);
+#   Error:                            ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16461: class daEnMegaDosun_c : public daBoss {
+#   Error:                                ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   16534:   DamagePlayer(this, apThis, apOther);
+#   Error:                                     ^
+#   function call '[daEnMegaDosun_c].DamagePlayer(daEnMegaDosun_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)'
+#   does not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16543:   DamagePlayer(this, apThis, apOther);
+#   Error:                                     ^
+#   function call '[daEnMegaDosun_c].DamagePlayer(daEnMegaDosun_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)'
+#   does not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16556:   DamagePlayer(this, apThis, apOther);
+#   Error:                                     ^
+#   function call '[daEnMegaDosun_c].DamagePlayer(daEnMegaDosun_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)'
+#   does not match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16580:  this->_36D = 0;   // byte
+#   Error:        ^^^^
+#   undefined identifier '_36D'
+### tools/cw/mwcceppc.exe Compiler:
+#   16582:  this->frzMgr.setSomething(1,1,1); //@0x809f5c5c
+#   Error:        ^^^^^^
+#   undefined identifier 'frzMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   16584:  this->pos.y -= 21.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16585:  this->pos.z = -280.0;  // behind layer1 (hides spikes)
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16605:  this->aPhysics.initWithStruct(this, &hm);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   16608:  this->collMgr.init(this, &belowSensor, &aboveSensor, 0);
+#   Error:        ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   16610:  this->pos_delta2.x = 0.0;
+#   Error:        ^^^^^^^^^^
+#   undefined identifier 'pos_delta2'
+### tools/cw/mwcceppc.exe Compiler:
+#   16611:  this->pos_delta2.y = 36.0;
+#   Error:        ^^^^^^^^^^
+#   undefined identifier 'pos_delta2'
+### tools/cw/mwcceppc.exe Compiler:
+#   16612:  this->pos_delta2.z = 0.0;
+#   Error:        ^^^^^^^^^^
+#   undefined identifier 'pos_delta2'
+### tools/cw/mwcceppc.exe Compiler:
+#   16613:  this->_320 = 0.0;
+#   Error:        ^^^^
+#   undefined identifier '_320'
+### tools/cw/mwcceppc.exe Compiler:
+#   16614:  this->_324 = 48.0;
+#   Error:        ^^^^
+#   undefined identifier '_324'
+### tools/cw/mwcceppc.exe Compiler:
+#   16616:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   16618:  this->scale.x = 1.0;
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16619:  this->scale.y = 1.0;
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16620:  this->scale.z = 1.0;
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16621:  this->max_speed.x = 0.0;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16622:  this->max_speed.y = -8.0;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16623:  this->max_speed.z = 0.0;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16624:  this->y_speed_inc = -0.25;
+#   Error:        ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   16625:  this->rot.x = 0;
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   16626:  this->rot.y = 0;
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   16627:  this->rot.z = 0;
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   16629:  this->direction = 0;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   16634:  this->leftBuffer = this->pos.x - (((float)((this->settings >> 24) & 0xFF) - 5.0) * 8.0);  //nyb 5-6 LEFT
+#   Error:                           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16635:  this->rightBuffer = this->pos.x + (((float)((this->settings >> 16) & 0xFF) - 3.0) * 8.0);  //nyb 7-8 RIGHT
+#   Error:                            ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16636:  this->topBuffer  = this->pos.y + (((float)((this->settings >> 8) & 0xFF) - 8.0) * 8.0);   //nyb 9-10 TOP
+#   Error:                           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16647:  this->doStateChange(&StateID_Grow);
+#   Error:        ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16654:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   16657:   float rect[] = {this->_320, this->_324, this->spriteSomeRectX, this->spriteSomeRectY};
+#   Error:                         ^^^^
+#   undefined identifier '_320'
+### tools/cw/mwcceppc.exe Compiler:
+#   16658:   int ret = this->outOfZone(this->pos, (float*)&rect, this->currentZoneID);
+#   Error:                   ^^^^^^^^^
+#   undefined identifier 'outOfZone'
+### tools/cw/mwcceppc.exe Compiler:
+#   16660:    this->OutOfScreenPosition = this->pos;
+#   Error:                                      ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16663:    doStateChange(&StateID_Outro);
+#   Error:                                ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16671:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16672:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16674:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   16675:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16690:   this->scale = (Vec){0.5, 0.5, 0.5};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   16693:   SetupKameck(this, Kameck);
+#   Error:                           ^
+#   function call '[daEnMegaDosun_c].SetupKameck(daEnMegaDosun_c *, {lval} daKameckDemo *)' does not match
+#   'SetupKameck(int)'
+#   'SetupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16699:   ret = GrowBoss(this, Kameck, 0.5, 1.0, 0, this->timer);
+#   Error:                                                        ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   16702:    PlaySound(this, SE_EMY_BIG_DOSSUN);
+#   Error:                                     ^
+#   function call '[daEnMegaDosun_c].PlaySound(daEnMegaDosun_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16703:    doStateChange(&StateID_UpMove);
+#   Error:                                 ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16708:   CleanupKameck(this, Kameck);
+#   Error:                             ^
+#   function call '[daEnMegaDosun_c].CleanupKameck(daEnMegaDosun_c *, {lval} daKameckDemo *)' does not match
+#   'CleanupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16724:   if (this->pos.x > this->rightBuffer) {
+#   Error:             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16726:    PlaySoundAsync(this, SE_OBJ_TEKKYU_G_CRASH);
+#   Error:                                                ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16731:   if (this->pos.x < this->leftBuffer) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16735:    this->direction = 1;
+#   Error:    ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16736:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16738:   this->pos.x += (direction) ? 1.2 : -1.2;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16740:   if (this->notFalling == 0) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16747:   if (this->timer == 30) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16751:   this->timer += 1;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16752:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16765:    this->doStateChange(&StateID_PuruMove);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16780:    this->doStateChange(&StateID_DownMove);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16798:   this->speed.y = 0.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16801:   this->HandleYSpeed();
+#   Error:         ^^^^^^^^^^^^
+#   undefined identifier 'HandleYSpeed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16802:   this->UpdateObjectPosBasedOnSpeedValuesReal();
+#   Error:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'UpdateObjectPosBasedOnSpeedValuesReal'
+### tools/cw/mwcceppc.exe Compiler:
+#   16805:   int ret = this->collMgr.calculateBelowCollisionWithSmokeEffect();
+#   Error:                   ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   16810:    this->doStateChange(&StateID_DownWait);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16812:    this->speed.y = 0.0;
+#   Error:          ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16814:    PlaySoundAsync(this, SE_EMY_BIG_DOSSUN);
+#   Error:                                          ^
+#   function call '[daEnMegaDosun_c].PlaySoundAsync(daEnMegaDosun_c *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16818:    this->speed.y = 0.0;
+#   Error:          ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   16820:    this->collMgr.clear2();
+#   Error:          ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   16821:    PlaySoundAsync(this, SE_EMY_BIG_DOSSUN);
+#   Error:                                          ^
+#   function call '[daEnMegaDosun_c].PlaySoundAsync(daEnMegaDosun_c *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16824:   SpawnThwompEffects(this);
+#   Error:                          ^
+#   function call '[daEnMegaDosun_c].SpawnThwompEffects(daEnMegaDosun_c *)' does not match
+#   'SpawnThwompEffects(dEn_c *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16825:   Vec p = ConvertStagePositionIntoScreenPosition__Maybe(this->pos);
+#   Error:                                                               ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16839:    this->doStateChange(&StateID_UpMove);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   16856:   this->collMgr.clear2();
+#   Error:         ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   16862:   if (this->pos.y > this->topBuffer) {
+#   Error:             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16866:   }
+#   Error:    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16869:   }
+#   Error:    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16873:  }
+#   Error:   ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16876:  void daEnMegaDosun_c::beginState_Outro() {
+#   Error:  ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   16878:   this->timer = 0;
+#   Error:                   ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16881:   this->y_speed_inc = 0.0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   16885:   this->pos.y = this->OutOfScreenPosition.y + 280.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16892:    SpawnEffect("Wm_mr_stockitemuse_b", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 2.0, 2.0});
+#   Error:                                                  ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16893:    SpawnEffect("Wm_mr_stockitemuse_c", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 2.0, 2.0});
+#   Error:                                                  ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   16894:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16896:   if (this->timer == 60) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16902:   if (this->timer == 120) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16904:    PlayerVictoryCries(this);
+#   Error:    ^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'PlayerVictoryCries'
+### tools/cw/mwcceppc.exe Compiler:
+#   16904:    PlayerVictoryCries(this);
+#   Error:                      ^
+#   identifier 'PlayerVictoryCries(int *)' redeclared as 'int'
+### tools/cw/mwcceppc.exe Compiler:
+#    3861: void PlayerVictoryCries(daBoss *actor) {
+#   Error:                                        ^
+#   identifier 'PlayerVictoryCries(int *)' was originally declared as 'void (int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16905:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16907:   if (this->timer > 240) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16911:   this->timer += 1;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16912:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   16927: class daRamboo_c : public daBoss {
+#   Error:                           ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   16993:  EN_LandbarrelPlayerCollision(this, apThis, apOther);
+#   Error:                                                    ^
+#   function call '[daRamboo_c].EN_LandbarrelPlayerCollision(daRamboo_c *, {lval} ActivePhysics *, {lval}
+#   ActivePhysics *)' does not match
+#   'EN_LandbarrelPlayerCollision(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16994:  DamagePlayer(this, apThis, apOther);
+#   Error:                                    ^
+#   function call '[daRamboo_c].DamagePlayer(daRamboo_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does not
+#   match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   16997:  doStateChange(&StateID_Flee);
+#   Error:                             ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17018:   doStateChange(&StateID_Flee);
+#   Error:                              ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17029:  DamagePlayer(this, apThis, apOther);
+#   Error:                                    ^
+#   function call '[daRamboo_c].DamagePlayer(daRamboo_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does not
+#   match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17033:  DamagePlayer(this, apThis, apOther);
+#   Error:                                    ^
+#   function call '[daRamboo_c].DamagePlayer(daRamboo_c *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does not
+#   match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17094:  this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17096:  this->aPhysics.collisionCheckType = 1;
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   17113:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   17114:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   17116:  this->Baseline = this->pos.y;
+#   Error:                         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17117:  this->rot.x = 0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17118:  this->rot.y = 0xE000; // Y is horizontal axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17119:  this->rot.z = 0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17120:  this->direction = 0; // Heading left.
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17124:  this->speed.x = 0.0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   17126:  this->pos.z = 3300.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17128:  char eventNum = (this->settings >> 16) & 0xFF;
+#   Error:                         ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   17146:  doStateChange(&StateID_Grow);
+#   Error:                             ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17157:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   17171:   doStateChange(&StateID_Outro);
+#   Error:                               ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17190:  matrix.translation(pos.x + 160.0, pos.y + (scale.x * 12.0) - 80.0, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17192:  fogModel.setDrawMatrix(matrix);
+#   Error:                         ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17193:  fogModel.setScale(&scale);
+#   Error:                     ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17196:  matrix.translation(pos.x + 160.0, pos.y - 80.0, pos.z + 200.0);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17197:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17200:   bodyModel.setDrawMatrix(matrix);
+#   Error:                           ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17201:   bodyModel.setScale(&scale);
+#   Error:                       ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17204:   hideModel.setDrawMatrix(matrix);
+#   Error:                           ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17205:   hideModel.setScale(&scale);
+#   Error:                       ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17215:  PlaySound(this, SE_EMY_TERESA);
+#   Error:                               ^
+#   function call '[daRamboo_c].PlaySound(daRamboo_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17217:  SetupKameck(this, Kameck);
+#   Error:                          ^
+#   function call '[daRamboo_c].SetupKameck(daRamboo_c *, {lval} daKameckDemo *)' does not match
+#   'SetupKameck(int)'
+#   'SetupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17224:  ret = GrowBoss(this, Kameck, 1.0, 15.0, 0, this->timer);
+#   Error:                                                        ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   17239:   doStateChange(&StateID_Advance);
+#   Error:                                 ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17243:  this->Baseline = this->pos.y;
+#   Error:                         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17245:  CleanupKameck(this, Kameck);
+#   Error:                            ^
+#   function call '[daRamboo_c].CleanupKameck(daRamboo_c *, {lval} daKameckDemo *)' does not match
+#   'CleanupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17272:  this->speed.y = 0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   17273:  this->speed.z = 0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   17288:  if ((px - 132.0) < this->pos.x) {
+#   Error:                           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17289:   this->pos.x -= this->timer / 28.0; }
+#   Error:                                       ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17291:   this->pos.x = (px - 132.0); }
+#   Error:                                ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17293:  this->pos.y = this->Baseline + sin(this->ytimer * 3.14 / 192) * 36;
+#   Error:  ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   17299:  PlaySound(this, SE_EMY_TERESA);
+#   Error:                               ^
+#   function call '[daRamboo_c].PlaySound(daRamboo_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17316:  PlaySound(this, SE_EMY_TERESA_STOP);
+#   Error:                                    ^
+#   function call '[daRamboo_c].PlaySound(daRamboo_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17342:   PlaySound(this, SE_EMY_CS_TERESA_BEAT_YOU);
+#   Error:                                            ^
+#   function call '[daRamboo_c].PlaySound(daRamboo_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17343:   doStateChange(&StateID_Advance);
+#   Error:                                 ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17378:  this->pos.x += (60 - this->timer) / (fleeFast ? 8 : 25);
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17382:   doStateChange(&StateID_Wait);
+#   Error:                              ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17400:  this->rot.x = 0x0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17401:  this->rot.y = 0xE000; // Y is horizontal axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17402:  this->rot.z = 0x0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17404:  OutroSetup(this);
+#   Error:                 ^
+#   function call '[daRamboo_c].OutroSetup(daRamboo_c *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17417:    PlayerVictoryCries(this);
+#   Error:                           ^
+#   function call '[daRamboo_c].PlayerVictoryCries(daRamboo_c *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17425:  Vec tempPos = (Vec){this->pos.x + 160.0, this->pos.y + 80.0, 5500.0};
+#   Error:                            ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17426:  ret = ShrinkBoss(this, &tempPos, 0.0, this->timer);
+#   Error:                                                   ^
+#   function call '[daRamboo_c].ShrinkBoss(daRamboo_c *, Point3d *, double, {lval} int)' does not match
+#   'ShrinkBoss(int *, Point3d *, float, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17429:   BossExplode(this, &tempPos);
+#   Error:                             ^
+#   function call '[daRamboo_c].BossExplode(daRamboo_c *, Point3d *)' does not match
+#   'BossExplode(int *, Point3d *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17455: class daBalboa_c : public daBoss {
+#   Error:                           ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   17553:  return dEn_c::prePlayerCollision(apThis, apOther);
+#   Error:                                                  ^
+#   function call '[daBalboa_c].prePlayerCollision({lval} ActivePhysics *, {lval} ActivePhysics *)' does not match
+#   'dEn_c::prePlayerCollision(ActivePhysics *, ActivePhysics *)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   17558: eterminingStatePress_or_playerCollision(this, apThis, apOther, 0);
+#   Error:                                                                 ^
+#   function call '[daBalboa_c].usedForDeterminingStatePress_or_playerCollision(daBalboa_c *, {lval} ActivePhysics *,
+#   {lval} ActivePhysics *, int)' does not match
+#   'usedForDeterminingStatePress_or_playerCollision(dEn_c *, ActivePhysics *, ActivePhysics *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17561:    this->dEn_c::playerCollision(apThis, apOther);
+#   Error:                 ^^^^^^^^^^^^^^^
+#   illegal class member access
+### tools/cw/mwcceppc.exe Compiler:
+#   17562:    this->_vf220(apOther->owner);
+#   Error:          ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   17566:   deathInfo.isDead = 0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'deathInfo'
+### tools/cw/mwcceppc.exe Compiler:
+#   17567:   this->flags_4FC |= (1<<(31-7));
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'flags_4FC'
+### tools/cw/mwcceppc.exe Compiler:
+#   17568:   this->counter_504[apOther->owner->which_player] = 0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'counter_504'
+### tools/cw/mwcceppc.exe Compiler:
+#   17588:    _vf220(apOther->owner);
+#   Error:                         ^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   17594:    PlaySoundAsync(this, SE_EMY_PENGUIN_DAMAGE);
+#   Error:                                              ^
+#   function call '[daBalboa_c].PlaySoundAsync(daBalboa_c *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17596:    doStateChange(&StateID_Damage);
+#   Error:                                 ^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17618:   dAcPy_vf3F8(apOther->owner, this, 3);
+#   Error:                                      ^
+#   function call '[daBalboa_c].dAcPy_vf3F8({lval} dStageActor_c *, daBalboa_c *, int)' does not match
+#   'dAcPy_vf3F8(void *, dEn_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17672:  this->scale = (Vec){1.0, 1.0, 1.0};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17673:  this->isBigBoss = (this->settings >> 28);
+#   Error:                           ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   17690:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   17691:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   17696:  spikeCollision.initWithStruct(this, &spikeInfo);
+#   Error:                                                ^
+#   function call '[ActivePhysics].initWithStruct(daBalboa_c *, ActivePhysics::Info *)' does not match
+#   'ActivePhysics::initWithStruct(dActor_c *, const ActivePhysics::Info *)' (non-static)
+#   'ActivePhysics::initWithStruct(dActor_c *, const ActivePhysics::Info *, unsigned char)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   17703:  this->rot.x = 0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17704:  this->rot.y = 0xE000; // Y is horizontal axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17705:  this->rot.z = 0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17707:  this->direction = 0; // Heading left.
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17708:  this->pos.z = -800.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17709:  this->pos.y -= 8.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17713:  this->PopUp[0] = (Vec){this->pos.x, this->pos.y - 54.0, this->pos.z};
+#   Error:                               ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17714:  this->PopUp[1] = (Vec){this->pos.x - 224.0, this->pos.y - 54.0, this->pos.z};
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17715:  this->PopUp[2] = (Vec){this->pos.x - 112.0, this->pos.y - 22.0, this->pos.z};
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17716:  this->PopUp[3] = (Vec){this->pos.x - 112.0, this->pos.y - 22.0, this->pos.z};
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17719:  doStateChange(&StateID_Grow);
+#   Error:  ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   17721:  this->onExecute();
+#   Error:  ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17722:  return true;
+#   Error:  ^^^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17723: }
+#   Error: ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17730:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   17764:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17765:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17767:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   17768:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   17784:   SetupKameck(this, Kameck);
+#   Error:                           ^
+#   function call '[daBalboa_c].SetupKameck(daBalboa_c *, {lval} daKameckDemo *)' does not match
+#   'SetupKameck(int)'
+#   'SetupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17797:   ret = GrowBoss(this, Kameck, 1.0, 2.25, 0, this->timer);
+#   Error:                                                         ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   17800:    PlaySound(this, SE_EMY_CHOROPU_BOUND);
+#   Error:                                        ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17801:    doStateChange(&StateID_BackDown);
+#   Error:                                    ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   17805:   CleanupKameck(this, Kameck);
+#   Error:                             ^
+#   function call '[daBalboa_c].CleanupKameck(daBalboa_c *, {lval} daKameckDemo *)' does not match
+#   'CleanupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17820:   this->pos = this->PopUp[randChoice];
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17825:    this->rot.y = 0xE000;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17826:    this->rot.z = 0;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17828:    this->direction = 0; }
+#   Error:          ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17831:    this->rot.y = 0x2000;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17832:    this->rot.z = 0;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17834:    this->direction = 1; }
+#   Error:          ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17849: rite_c__getXDirectionOfFurthestPlayerRelativeToVEC3(this, this->pos);
+#   Error:                                                                 ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17852:     this->rot.y = 0xE000;
+#   Error:           ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17853:     this->direction = 0; }
+#   Error:           ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17855:     this->rot.y = 0x2000;
+#   Error:           ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   17856:     this->direction = 1; }
+#   Error:           ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17859:   PlaySound(this, 0x21F);
+#   Error:                        ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, int)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17865:    doStateChange(&StateID_HeadPoke);
+#   Error:                                    ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   17869:    this->pos.y += 0.8182; // Height is 54 pixels, move up 9 pixels.
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17888:   this->pos.y += 0.24; // Height is 54 pixels, move up 18 pixels.
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17891:    doStateChange(&StateID_AllOut); }
+#   Error:                                  ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   17905:   PlaySound(this, 0x220);
+#   Error:                        ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, int)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17911:   this->pos.y += 0.8182; // Height is 54 pixels, move up 27 pixels.
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17914:    doStateChange(&StateID_ThrowWrench);
+#   Error:                                       ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   17945:    if (this->direction) { dir = 0; }
+#   Error:              ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   17945:    if (this->direction) { dir = 0; }
+#   Error:                                     ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17946:    else      { dir = 1; }
+#   Error:                          ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17948:    settings = (dir) | (up << 1);
+#   Error:    ^^^^^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   17953:    CreateActor(544, settings, this->pos, 0, 0);
+#   Error:                                     ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17968:    doStateChange(&StateID_BackDown); }
+#   Error:                                    ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   17981:   PlaySound(this, 0x221);
+#   Error:                        ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, int)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   17983:   SpawnEffect("Wm_mr_sanddive_out", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 1.0, 1.0});
+#   Error:                                               ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17984:   SpawnEffect("Wm_mr_sanddive_smk", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 1.0, 1.0});
+#   Error:   ^^^^^^^^^^^
+#   undefined identifier 'SpawnEffect'
+### tools/cw/mwcceppc.exe Compiler:
+#   17984:   SpawnEffect("Wm_mr_sanddive_smk", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 1.0, 1.0});
+#   Error:              ^
+#   identifier 'SpawnEffect(const char *, int, Point3d *, S16Vec *, Point3d *)' redeclared as 'int'
+### tools/cw/mwcceppc.exe Compiler:
+#      In: include\game.h
+# -----------------------
+#    4791: tern "C" bool SpawnEffect(const char*, int, Vec*, S16Vec*, Vec*);
+#   Error:                                                                 ^
+#   identifier 'SpawnEffect(const char *, int, Point3d *, S16Vec *, Point3d *)' was originally declared as 'extern "C"
+#   bool (const char *, int, Point3d *, S16Vec *, Point3d *)'
+### tools/cw/mwcceppc.exe Compiler:
+#    File: tmp\fasthack.cpp
+# -------------------------
+#   17985:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   17990:    this->pos.y -= 2.0;  // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   17994:    doStateChange(&StateID_ManholeUp); }
+#   Error:                                     ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18008:   OutroSetup(this);
+#   Error:                  ^
+#   function call '[daBalboa_c].OutroSetup(daBalboa_c *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18010:   this->rot.x = 0x0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18011:   this->rot.z = 0x0; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18021:    if (this->timer == 60) { PlayerVictoryCries(this); }
+#   Error:                                                    ^
+#   function call '[daBalboa_c].PlayerVictoryCries(daBalboa_c *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18028:   ret = ShrinkBoss(this, &this->pos, 2.25, this->timer);
+#   Error:                                 ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18029:   this->pos.y -= 0.02;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18032:    BossExplode(this, &this->pos);
+#   Error:                             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18036:   else   { PlaySound(this, SE_EMY_CHOROPU_SIGN); }
+#   Error:                                               ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18051:   this->removeMyActivePhysics();
+#   Error:         ^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'removeMyActivePhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18055:   if (this->timer > 6) { doStateChange(&StateID_RevengeUp); }
+#   Error:                                                           ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18064:    this->pos.y -= 5.0; // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18068:     StopBGMMusic();
+#   Error:                  ^
+#   function call '[daBalboa_c].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   18069:     doStateChange(&StateID_Outro);
+#   Error:                                  ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18071:    this->pos.y -= 3.5; // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18074:    this->pos.y -= 1.0; // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18077:    this->pos.y += 1.0; // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18080:    this->pos.y += 3.5; // Height is 54 pixels, move down
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18085:   this->addMyActivePhysics();
+#   Error:         ^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'addMyActivePhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18093:   this->pos = this->PopUp[2];
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18094:   this->rot.y = 0;
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18101:   PlaySound(this, 0x220);
+#   Error:                        ^
+#   function call '[daBalboa_c].PlaySound(daBalboa_c *, int)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18105:   this->pos.y += 1.6363; // Height is 54 pixels, move up 27 pixels.
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18108:    doStateChange(&StateID_Revenge);
+#   Error:                                   ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18151:    CreateActor(544, settings, this->pos, 0, 0);
+#   Error:                                     ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18168:    doStateChange(&StateID_BackDown); }
+#   Error:                                    ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18528: class daPodouble : public daBoss {
+#   Error:                           ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   18614: is, ActivePhysics *apOther) { DamagePlayer(this, apThis, apOther); }
+#   Error:                                                                 ^
+#   function call '[daPodouble].DamagePlayer(daPodouble *, {lval} ActivePhysics *, {lval} ActivePhysics *)' does not
+#   match
+#   'DamagePlayer(dEn_c *, ActivePhysics *, ActivePhysics *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18646:    if (this->damage < 12)  { doStateChange(&StateID_Damage); }
+#   Error:                                                            ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18647:    else         { doStateChange(&StateID_Outro); }
+#   Error:                                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18658:    if (this->damage < 12)  { doStateChange(&StateID_Damage); }
+#   Error:                                                            ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18659:    else         { doStateChange(&StateID_Outro); }
+#   Error:                                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18672:    if (this->damage < 12)  { doStateChange(&StateID_Damage); }
+#   Error:                                                            ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18673:    else         { doStateChange(&StateID_Outro); }
+#   Error:                                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18682:  aPhysics.info.xDistToEdge = 11.429f * scale.x;
+#   Error:  ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18683:  aPhysics.info.yDistToEdge = 11.429f * scale.y;
+#   Error:  ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18689:  this->isFire = this->settings >> 28;
+#   Error:                       ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   18690:  this->Baseline = this->pos.y - (float)((this->settings & 0xFF) * 0.8);
+#   Error:                         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18752:  this->scale = (Vec){1.0, 1.0, 1.0};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18755:  this->direction = (this->isFire) ? 0 : 1;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   18758:  this->rot.x = 0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18759:  this->rot.y = (direction) ? 0xD800 : 0x2800;
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18760:  this->rot.z = 0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18762:  this->speed.x = 0.0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18763:  this->speed.y = 0.0;
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18764:  this->max_speed.x = 0.0;
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18765:  this->x_speed_inc = 0.0;
+#   Error:        ^^^^^^^^^^^
+#   undefined identifier 'x_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   18786:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18787:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   18789:  doStateChange(&StateID_Grow);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18800:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   18802:  float diff = 8.57f * scale.x;
+#   Error:                       ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18803:  float checkY = pos.y - diff, checkLastY = last_pos.y - diff;
+#   Error:                                            ^^^^^^^^
+#   undefined identifier 'last_pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18809: ance->queryPosition(&myPos, &outBlockPos, &outFloat, &outAngle, currentLayerID);
+#   Error:                                                                 ^^^^^^^^^^^^^^
+#   undefined identifier 'currentLayerID'
+### tools/cw/mwcceppc.exe Compiler:
+#   18814:    VEC3 efScale = {scale.x * 0.7f, scale.y * 0.7f, scale.z * 0.7f};
+#   Error:                    ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18830:   matrix.translation(pos.x, pos.y, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   18832:   fogModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   18833:   fogModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18861:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   18862:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   18864:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   18865:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18871:  if (acState.getCurrentState() == &StateID_SyncDie)
+#   Error:      ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   18885:   SetupKameck(this, Kameck);
+#   Error:                           ^
+#   function call '[daPodouble].SetupKameck(daPodouble *, {lval} daKameckDemo *)' does not match
+#   'SetupKameck(int)'
+#   'SetupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18886:   this->scale = (Vec){1.0, 1.0, 1.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18896:    if (timer == 150) { PlaySound(this, SE_BOSS_IGGY_WANWAN_TO_L); }
+#   Error:                                                                ^
+#   function call '[daPodouble].PlaySound(daPodouble *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18905:     this->scale = (Vec){modifier, modifier, modifier};
+#   Error:           ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   18906:     this->pos.y = this->pos.y + (18/80.0);
+#   Error:           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18910:     PlaySound(this, SE_EMY_CS_MOVE_W8_BUBBLE_APP);
+#   Error:                                                 ^
+#   function call '[daPodouble].PlaySound(daPodouble *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   18911:     doStateChange(&StateID_Bounce);
+#   Error:                                   ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   18918:   ret = GrowBoss(this, Kameck, 1.0, 3.5, 18, this->timer);
+#   Error:                                                         ^
+#   call of non-function
+### tools/cw/mwcceppc.exe Compiler:
+#   18924:    Vec tempPos = (Vec){this->pos.x - 190.0, this->pos.y + 120.0, 3564.0};
+#   Error:                              ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18925: = create(AC_YOSHI_EGG, 0x71010000, &tempPos, &(S16Vec){0,0,0}, 0);
+#   Error:                                                                 ^
+#   undefined identifier 'create'
+### tools/cw/mwcceppc.exe Compiler:
+#   18929:     tempPos = (Vec){this->pos.x - 190.0, this->pos.y + 120.0, 3564.0};
+#   Error:                           ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18930: = create(AC_YOSHI_EGG, 0xF1010000, &tempPos, &(S16Vec){0,0,0}, 0);
+#   Error:                                                                 ^
+#   undefined identifier 'create'
+### tools/cw/mwcceppc.exe Compiler:
+#   18934:    if (players > 2) {
+#   Error:        ^^^^^^^
+#   undefined identifier 'players'
+### tools/cw/mwcceppc.exe Compiler:
+#   18935:     tempPos = (Vec){this->pos.x - 190.0, this->pos.y + 120.0, 3564.0};
+#   Error:     ^^^^^^^
+#   undefined identifier 'tempPos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18936:     spawner->create(AC_YOSHI_EGG, 0x71010000, &tempPos, &(S16Vec){0,0,0}, 0);
+#   Error:     ^^^^^^^
+#   undefined identifier 'spawner'
+### tools/cw/mwcceppc.exe Compiler:
+#   18939:    if (players > 3) {
+#   Error:    ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18943:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18945:   if (ret) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18949:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18954:   CleanupKameck(this, Kameck);
+#   Error:   ^^^^^^^^^^^^^
+#   undefined identifier 'CleanupKameck'
+### tools/cw/mwcceppc.exe Compiler:
+#   18954:   CleanupKameck(this, Kameck);
+#   Error:                ^
+#   identifier 'CleanupKameck(int *, int)' redeclared as 'int'
+### tools/cw/mwcceppc.exe Compiler:
+#      In: src\boss.h
+# -------------------
+#      37: void CleanupKameck(daBoss* actor, daKameckDemo *Kameck);
+#   Error:                                                       ^
+#   identifier 'CleanupKameck(int *, int)' was originally declared as 'void (int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#    File: tmp\fasthack.cpp
+# -------------------------
+#   18955:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18962:   this->rot.y = (direction) ? 0xD800 : 0x2800;
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18963:   this->rot.x = 0;
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   18965:   this->max_speed.y = -5.0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18966:   this->speed.y = -1.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18967:   this->y_speed_inc = -0.1875;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   18977:   HandleYSpeed();
+#   Error:                ^
+#   undefined identifier 'HandleYSpeed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18978:   doSpriteMovement();
+#   Error:                    ^
+#   undefined identifier 'doSpriteMovement'
+### tools/cw/mwcceppc.exe Compiler:
+#   18980:   if (this->pos.y < this->Baseline) {
+#   Error:             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   18982:    this->goingUp = 1; }
+#   Error:                        ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18984:   if (-0.1 < this->speed.y < 0.1) {
+#   Error:   ^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   18985:    if (this->goingUp == 1) { doStateChange(&StateID_Spit); } }
+#   Error:                                                               ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   18989:   checkLiquidImmersion(&(Vec2){this->pos.x, this->pos.y}, 3.0f);
+#   Error:   ^^^^^^^^^^^^^^^^^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   18993:   this->speed.y = 0.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   18994:   this->y_speed_inc = 0.0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   19005:    this->rot.x -= 0x80;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   19009:    this->rot.x += 0x400;
+#   Error:          ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   19014:     dStageActor_c *spawner = create(BROS_ICEBALL, 0x10, &this->pos, &(S16Vec){0,0,0}, 0);
+#   Error:                                                                ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   19015:     *((u32 *) (((char *) spawner) + 0x3DC)) = this->id;
+#   Error:                                                     ^^
+#   undefined identifier 'id'
+### tools/cw/mwcceppc.exe Compiler:
+#   19031:     PlaySoundAsync(this, SE_EMY_ICE_BROS_ICE);
+#   Error:                                             ^
+#   function call '[daPodouble].PlaySoundAsync(daPodouble *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19032:     doStateChange(&StateID_Bounce);
+#   Error:                                   ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   19035:     dStageActor_c *spawner = create(BROS_FIREBALL, 0, &this->pos, &(S16Vec){0,0,0}, 0);
+#   Error:                                                              ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   19050:     PlaySoundAsync(this, SE_EMY_FIRE_BROS_FIRE);
+#   Error:                                               ^
+#   function call '[daPodouble].PlaySoundAsync(daPodouble *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19051:     doStateChange(&StateID_Bounce);
+#   Error:                                   ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   19058:   this->speed.y = -1.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   19059:   this->y_speed_inc = -0.1875;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   19071:    PlaySoundAsync(this, SE_OBJ_PNGN_ICE_THAW);
+#   Error:                                             ^
+#   function call '[daPodouble].PlaySoundAsync(daPodouble *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19072:    SpawnEffect("Wm_ob_iceevaporate", 0, &this->pos, &(S16Vec){0,0,0}, &(Vec){2.0, 2.0, 2.0}); }
+#   Error:                                                ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   19073:   else {
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19076:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19080:   amt = sin(this->timer * 3.14 / 4.0) * 0x2000;
+#   Error:   ^^^
+#   undefined identifier 'amt'
+### tools/cw/mwcceppc.exe Compiler:
+#   19082:   this->rot.y = amt;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19083:   this->rot.y += (direction) ? 0xD800 : 0x2800;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19085:   float targetScale = 3.5f - (damage * 0.175f);
+#   Error:                               ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   19086:   if (scale.x > targetScale) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19094:   if (this->timer > 180) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19098:   if ((this->timer == 60) || (this->timer == 80) || (this->timer == 100)) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19110:   this->timer += 1;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19112:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19124:    if (other->id == this->id) {
+#   Error:               ^^
+#   undefined identifier 'id'
+### tools/cw/mwcceppc.exe Compiler:
+#   19126:    }
+#   Error:     ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19136:   OutroSetup(this);
+#   Error:                  ^
+#   function call '[daPodouble].OutroSetup(daPodouble *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19144:    if (this->timer == 60) { PlayerVictoryCries(this); }
+#   Error:                                                    ^
+#   function call '[daPodouble].PlayerVictoryCries(daPodouble *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19151:   ret = ShrinkBoss(this, &this->pos, 3.5, this->timer);
+#   Error:                                 ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   19154:    BossExplode(this, &this->pos);
+#   Error:                             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   19173:   this->removeMyActivePhysics();
+#   Error:         ^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'removeMyActivePhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   19186:   PlaySound(this, SE_EMY_GABON_ROCK_THROW);
+#   Error:                                          ^
+#   function call '[daPodouble].PlaySound(daPodouble *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   19190:    Delete(0);
+#   Error:            ^
+#   undefined identifier 'Delete'
+### tools/cw/mwcceppc.exe Compiler:
+#   19249:  daKameckDemo *Kameck;
+#   Error:  ^^^^^^^^^^^^
+#   undefined identifier 'daKameckDemo'
+### tools/cw/mwcceppc.exe Compiler:
+#   19694:  StopBGMMusic();
+#   Error:               ^
+#   function call '[daBossBattan].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   19701:  MakeMarioEnterDemoMode();
+#   Error:                         ^
+#   function call '[daBossBattan].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   19715:  Kameck = (daKameckDemo*)createChild(KAMECK_FOR_CASTLE_DEMO, (dStageActor_c*)this, 0, &KamekPos, &KamekRot, 0);
+#   Error:                         ^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   19738:   this->Kameck->doStateChange(&daKameckDemo::StateID_DieFall);
+#   Error:         ^^^^^^
+#   undefined identifier 'Kameck'
+### tools/cw/mwcceppc.exe Compiler:
+#   19767:  MakeMarioExitDemoMode();
+#   Error:                        ^
+#   function call '[daBossBattan].MakeMarioExitDemoMode()' is ambiguous
+#   'MakeMarioExitDemoMode()'
+#   'MakeMarioExitDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   19768:  StartBGMMusic();
+#   Error:                ^
+#   function call '[daBossBattan].StartBGMMusic()' is ambiguous
+#   'StartBGMMusic()'
+#   'StartBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   19770:  this->Kameck->Delete(1);
+#   Error:        ^^^^^^
+#   undefined identifier 'Kameck'
+### tools/cw/mwcceppc.exe Compiler:
+#   19945:  StopBGMMusic();
+#   Error:               ^
+#   function call '[daBossBattan].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   20398: class daCaptainBowser : public daBoss {
+#   Error:                                ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   20540:   this->damage -= 1;
+#   Error:         ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   20542: tAtPosition((Vec2){apOther->owner->pos.x, apOther->owner->pos.y});
+#   Error:                                                                 ^
+#   undefined identifier 'spawnHitEffectAtPosition'
+### tools/cw/mwcceppc.exe Compiler:
+#   20548:   if (this->damage == this->maxDamage/2)  { doStateChange(&StateID_Roar); }
+#   Error:             ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   20548: >damage == this->maxDamage/2)  { doStateChange(&StateID_Roar); }
+#   Error:                                                                 ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20549:   else if (this->damage < 0)     { initiateDeathSequence(); }
+#   Error:                                                              ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20550:   else          { doStateChange(&StateID_Damage); }
+#   Error:                                                    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20554: :playerCollision(ActivePhysics *apThis, ActivePhysics *apOther) {
+#   Error:                                                                 ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20560: etUpdateRate(const char* name, int unk, float unk2, float rate) {
+#   Error:                                                                 ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20567: int daCaptainBowser::onCreate() {
+#   Error:                                 ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20623:  this->scale = (Vec){0.57, 0.57, 0.57};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   20625:  this->damage = this->maxDamage;
+#   Error:        ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   20635:     0, 0, 0, 1, 0);
+#   Error:                  ^
+#   function call '[Physics].setup(daCaptainBowser *, {lval} const float, {lval} const float, {lval} const float,
+#   {lval} const float, int, int, int, int, int)' does not match
+#   'Physics::setup(dActor_c *, float, float, float, float, void *, void *, void *, unsigned char, unsigned char,
+#   Point2d *)' (non-static)
+#   'Physics::setup(dActor_c *, Point2d *, Point2d *, void *, void *, void *, unsigned char, unsigned char, Point2d
+#   *)' (non-static)
+#   'Physics::setup(dActor_c *, Physics::Info *, unsigned char, unsigned char, Point2d *)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   20655:  this->aPhysics.initWithStruct(this, &BowserPhysics);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   20661:  doStateChange(&StateID_Intro);
+#   Error:                               ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   20663:  return true;
+#   Error:             ^
+#   illegal return value in void/constructor/destructor function
+### tools/cw/mwcceppc.exe Compiler:
+#   20673:  return dEn_c::afterExecute(param);
+#   Error:                                  ^
+#   function call '[daCaptainBowser].afterExecute({lval} int)' does not match
+#   'dEn_c::afterExecute(int)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   20688:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   20692:  if (!prplSound.Exists() && acState.getCurrentState() != &StateID_Outro && acState.getCurrentState() != &StateID_PanToExit) {
+#   Error:                             ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   20696:  aPhysics.info.xDistToCenter = bowserX;
+#   Error:  ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   20697:  aPhysics.info.yDistToCenter = bowserY + 28.0f;
+#   Error:  ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   20727:  if(this->shipAnm.isAnimationDone() && acState.getCurrentState() != &StateID_Outro && acState.getCurrentState() != &StateID_Pan
+#   Error:                                        ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   20738:  matrix.translation(pos.x+bowserX, pos.y+bowserY, pos.z-200.0); // 136.0 is the bottom of the platform footing
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20739:  matrix.applyRotationYXZ(&bowserRotX, &bowserRotY, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20741:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20748:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20749:  matrix.applyRotationYXZ(&rot.x, &shipRotY, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20751:  shipModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20752:  shipModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   20758:   matrix.translation(pos.x + flameOffsetX, pos.y + flameOffsetY, flameZ);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20760:   matrix.applyRotationZ(&thing);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20762:   flamethrowerModel.setDrawMatrix(matrix);
+#   Error:                                   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   20777:   this->timer = 0;
+#   Error:         ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20787:     OSReport("We're done: %d", this->timer);
+#   Error:                                      ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20788:     doStateChange(&StateID_Wait);
+#   Error:                                 ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   20794:   if ((this->timer > 180) && (this->timer < 420)) {
+#   Error:              ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20794:   if ((this->timer > 180) && (this->timer < 420)) {
+#   Error:                                                    ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20798:    pos.x = ClassWithCameraInfo::instance->screenCentreX;
+#   Error:    ^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   20802:    PlaySoundAsync(this, SE_BOSS_KOOPA_RUMBLE1); // 0x5D4
+#   Error:                                              ^
+#   function call '[daCaptainBowser].PlaySoundAsync(daCaptainBowser *, SFX)' does not match
+#   'PlaySoundAsync(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   20807:   if (this->timer == 422) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20810:    for (int i = 0; i < SHIP_SCOLL_COUNT; i++)
+#   Error:    ^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20811:     shipSColls[i].addToList();
+#   Error:     ^^^^^^^^^^
+#   undefined identifier 'shipSColls'
+### tools/cw/mwcceppc.exe Compiler:
+#   20812:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20814:   if (this->timer > 420) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20821:   if (this->timer == (roarLen - 190 + 420)) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20825:   if (this->timer > (roarLen - 190 + 420)) {
+#   Error:   ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20827:    if (this->chrAnimation.getCurrentFrame() == 53.0) {
+#   Error:    ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20831:    if (this->chrAnimation.getCurrentFrame() > 53.0) {
+#   Error:    ^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20835:   }
+#   Error:   ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20837:   this->timer++;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20838:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20841:   this->aPhysics.addToList();
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20843:   this->isInvulnerable = 0;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20844:   this->isIntro = 0;
+#   Error:   ^^^^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20845:  }
+#   Error:  ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20867:    doStateChange(&StateID_Fire);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   20870:    doStateChange(&StateID_Throw);
+#   Error:                                 ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   20883:   this->timer = 0;
+#   Error:         ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20900:     if (this->timer == 1) {
+#   Error:               ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20902:     }
+#   Error:      ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20904:    else {
+#   Error:    ^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20906:    }
+#   Error:       ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20908:    this->timer++;
+#   Error:    ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   20912:  void daCaptainBowser::endState_Throw() {  }
+#   Error:                                         ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20918:  void daCaptainBowser::beginState_Fire() {
+#   Error:                                          ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20922:  void daCaptainBowser::executeState_Fire() {
+#   Error:                                            ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20925:    PlaySound(this, SE_BOSS_KOOPA_L_FIRE_SHOT);
+#   Error:                                             ^
+#   function call '[daCaptainBowser].PlaySound(daCaptainBowser *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   20932:     if (this->timer == 1) {
+#   Error:               ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   20934:     }
+#   Error:      ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20936:    else {
+#   Error:    ^^^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20938:    }
+#   Error:       ^^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20940:    this->timer++;
+#   Error:    ^^^^
+#   ';' expected
+### tools/cw/mwcceppc.exe Compiler:
+#   20944:  void daCaptainBowser::endState_Fire() {  }
+#   Error:                                        ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20951:  void daCaptainBowser::beginState_Roar() {
+#   Error:                                          ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20956:  void daCaptainBowser::executeState_Roar() {
+#   Error:                                            ^
+#   declaration syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   20987:   PlaySound(this, SE_VOC_KP_DAMAGE_HPDP);
+#   Error:                                        ^
+#   function call '[daCaptainBowser].PlaySound(daCaptainBowser *, SFX)' does not match
+#   'PlaySound(dStageActor_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   20992:    doStateChange(&StateID_Wait);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   21007:  StopBGMMusic();
+#   Error:               ^
+#   function call '[daCaptainBowser].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   21012:  doStateChange(&StateID_Roar);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   21020:  timer = 0;
+#   Error:  ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21025:  timer++;
+#   Error:  ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21027:  if (timer == 56) {
+#   Error:      ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21031:  } else if (timer == 185) {
+#   Error:             ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21034:  } else if (timer == 348) {
+#   Error:             ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21039:  if (timer > 204 && timer < 315) {
+#   Error:      ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21040:   if (timer == 205) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21049:    flameCollision.initWithStruct(this, &fcInfo);
+#   Error:                                               ^
+#   function call '[ActivePhysics].initWithStruct(daCaptainBowser *, const ActivePhysics::Info *)' does not match
+#   'ActivePhysics::initWithStruct(dActor_c *, const ActivePhysics::Info *)' (non-static)
+#   'ActivePhysics::initWithStruct(dActor_c *, const ActivePhysics::Info *, unsigned char)' (non-static)
+### tools/cw/mwcceppc.exe Compiler:
+#   21052:   if (timer < 289) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21072:  } else if (timer == 315) {
+#   Error:             ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21075:   aPhysics.removeFromList();
+#   Error:   ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   21087:  } else if (timer == 348) {
+#   Error:             ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21096:   doStateChange(&StateID_Outro);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   21126:  timer = 0;
+#   Error:  ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21135:  timer++;
+#   Error:  ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21176:    timerWhenCrashHappens = timer;
+#   Error:                            ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21190:    if (timer & 4 && explosionBottomBound > -249.0f) {
+#   Error:        ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21204:    if ((timer % 12) == 0 && (frame < 150.0f)) {
+#   Error:         ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21227:  if (timer == (timerWhenCrashHappens + 90)) {
+#   Error:      ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21229:   timerForVictoryDance = timer + (7*60);
+#   Error:                          ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21275:  if (timer > (timerWhenCrashHappens + 90)) {
+#   Error:      ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21316:   if (timer == timerForVictoryDance) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21339:   if (timer == (timerForVictoryDance + 180)) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   21340:    doStateChange(&StateID_PanToExit);
+#   Error:                                     ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   21352:  timer = 0;
+#   Error:  ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   26936:  MakeMarioEnterDemoMode();
+#   Error:                         ^
+#   function call '[dSingAlong].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27031:  MakeMarioExitDemoMode();
+#   Error:                        ^
+#   function call '[dSingAlong].MakeMarioExitDemoMode()' is ambiguous
+#   'MakeMarioExitDemoMode()'
+#   'MakeMarioExitDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27047:   MakeMarioEnterDemoMode();
+#   Error:                          ^
+#   function call '[dSingAlong].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27068:  MakeMarioEnterDemoMode();
+#   Error:                         ^
+#   function call '[dSingAlong].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27121:  MakeMarioEnterDemoMode();
+#   Error:                         ^
+#   function call '[dSingAlong].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27141:   StopBGMMusic();
+#   Error:                ^
+#   function call '[dSingAlong].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27214:  MakeMarioEnterDemoMode();
+#   Error:                         ^
+#   function call '[dSingAlong].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   27228:   StopBGMMusic();
+#   Error:                ^
+#   function call '[dSingAlong].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   28106: class daNabbit : public daBoss {
+#   Error:                         ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   28195:   dStateBase_c *whatState = acState.getCurrentState();
+#   Error:                             ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   28199: eterminingStatePress_or_playerCollision(this, apThis, apOther, 2);
+#   Error:                                                                 ^
+#   function call '[daNabbit].usedForDeterminingStatePress_or_playerCollision(daNabbit *, {lval} ActivePhysics *,
+#   {lval} ActivePhysics *, int)' does not match
+#   'usedForDeterminingStatePress_or_playerCollision(dEn_c *, ActivePhysics *, ActivePhysics *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   28208:    this->playEnemyDownSound1();
+#   Error:          ^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'playEnemyDownSound1'
+### tools/cw/mwcceppc.exe Compiler:
+#   28209:    damage += 5;
+#   Error:    ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28210:    if (damage >= 15) { doStateChange(&StateID_Outro); }
+#   Error:        ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28211:    else { doStateChange(&StateID_Damage); }
+#   Error:                                         ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28215:    this->dEn_c::playerCollision(apThis, apOther);
+#   Error:                 ^^^^^^^^^^^^^^^
+#   illegal class member access
+### tools/cw/mwcceppc.exe Compiler:
+#   28216:    this->_vf220(apOther->owner);
+#   Error:          ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   28219:   deathInfo.isDead = 0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'deathInfo'
+### tools/cw/mwcceppc.exe Compiler:
+#   28220:   this->flags_4FC |= (1<<(31-7));
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'flags_4FC'
+### tools/cw/mwcceppc.exe Compiler:
+#   28221:   this->counter_504[apOther->owner->which_player] = 0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'counter_504'
+### tools/cw/mwcceppc.exe Compiler:
+#   28232:   damage += 5;
+#   Error:   ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28233:   if (damage >= 15) { doStateChange(&StateID_Outro); }
+#   Error:       ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28234:   else { doStateChange(&StateID_Damage); }
+#   Error:                                        ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28237:   deathInfo.isDead = 0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'deathInfo'
+### tools/cw/mwcceppc.exe Compiler:
+#   28238:   this->flags_4FC |= (1<<(31-7));
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'flags_4FC'
+### tools/cw/mwcceppc.exe Compiler:
+#   28239:   this->counter_504[apOther->owner->which_player] = 5;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'counter_504'
+### tools/cw/mwcceppc.exe Compiler:
+#   28240:   bouncePlayerWhenJumpedOn(apOther->owner);
+#   Error:                                          ^
+#   undefined identifier 'bouncePlayerWhenJumpedOn'
+### tools/cw/mwcceppc.exe Compiler:
+#   28248:   damage += 3;
+#   Error:   ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28249:   if (damage >= 15) { doStateChange(&StateID_Outro); }
+#   Error:       ^^^^^^
+#   undefined identifier 'damage'
+### tools/cw/mwcceppc.exe Compiler:
+#   28250:   else { doStateChange(&StateID_Damage); }
+#   Error:                                        ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28258:   dAcPy_vf3F8(apOther->owner, this, 3);
+#   Error:                                      ^
+#   function call '[daNabbit].dAcPy_vf3F8({lval} dStageActor_c *, daNabbit *, int)' does not match
+#   'dAcPy_vf3F8(void *, dEn_c *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   28260:   deathInfo.isDead = 0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'deathInfo'
+### tools/cw/mwcceppc.exe Compiler:
+#   28261:   this->flags_4FC |= (1<<(31-7));
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'flags_4FC'
+### tools/cw/mwcceppc.exe Compiler:
+#   28262:   this->counter_504[apOther->owner->which_player] = 0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'counter_504'
+### tools/cw/mwcceppc.exe Compiler:
+#   28296:   HandleXSpeed();
+#   Error:                ^
+#   undefined identifier 'HandleXSpeed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28297:   HandleYSpeed();
+#   Error:                ^
+#   undefined identifier 'HandleYSpeed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28298:   doSpriteMovement();
+#   Error:                    ^
+#   undefined identifier 'doSpriteMovement'
+### tools/cw/mwcceppc.exe Compiler:
+#   28300:   cmgr_returnValue = collMgr.isOnTopOfTile();
+#   Error:                      ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28301:   collMgr.calculateBelowCollisionWithSmokeEffect();
+#   Error:   ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28304:    stuffRelatingToCollisions(0.1875f, 1.0f, 0.5f);
+#   Error:                                                 ^
+#   undefined identifier 'stuffRelatingToCollisions'
+### tools/cw/mwcceppc.exe Compiler:
+#   28305:    if (speed.y != 0.0f)
+#   Error:        ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28309:   if (collMgr.isOnTopOfTile()) {
+#   Error:       ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28315:    speed.y = 0.0f;
+#   Error:    ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28319:   if (_34A & 4) {
+#   Error:       ^^^^
+#   undefined identifier '_34A'
+### tools/cw/mwcceppc.exe Compiler:
+#   28321:    collMgr.pSpeed = &v;
+#   Error:    ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28323:    if (collMgr.calculateAboveCollision(collMgr.outputMaybe))
+#   Error:        ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28324:     speed.y = 0.0f;
+#   Error:     ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28326:    collMgr.pSpeed = &speed;
+#   Error:    ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28329:    if (collMgr.calculateAboveCollision(collMgr.outputMaybe))
+#   Error:        ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28330:     speed.y = 0.0f;
+#   Error:     ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28333:   collMgr.calculateAdjacentCollision(0);
+#   Error:   ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28336:   if (collMgr.outputMaybe & (0x15 << direction)) {
+#   Error:       ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28337:    if (collMgr.isOnTopOfTile()) {
+#   Error:        ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28340:    pos.x += direction ? 2.0 : -2.0;
+#   Error:             ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28355:  isBigBoss = settings & 0xF;
+#   Error:              ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   28373:   scale = (Vec){1.0f, 1.0f, 1.0f};
+#   Error:   ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   28379:   direction = 1; // Heading left.
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28381:   speed.x = 0.0;
+#   Error:   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28382:   speed.y = 0.0;
+#   Error:   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28384:   max_speed.x = 50.0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28403:   this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:         ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   28404:   this->aPhysics.addToList();
+#   Error:         ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   28409:   spriteSomeRectX = 48.0f;
+#   Error:   ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectX'
+### tools/cw/mwcceppc.exe Compiler:
+#   28410:   spriteSomeRectY = 36.0f;
+#   Error:   ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectY'
+### tools/cw/mwcceppc.exe Compiler:
+#   28411:   _320 = 0.0f;
+#   Error:   ^^^^
+#   undefined identifier '_320'
+### tools/cw/mwcceppc.exe Compiler:
+#   28412:   _324 = 18.0f;
+#   Error:   ^^^^
+#   undefined identifier '_324'
+### tools/cw/mwcceppc.exe Compiler:
+#   28419:   collMgr.init(this, &below, &above, &adjacent);
+#   Error:   ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28420:   collMgr.calculateBelowCollisionWithSmokeEffect();
+#   Error:   ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28422:   cmgr_returnValue = collMgr.isOnTopOfTile();
+#   Error:                      ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28424:   if (collMgr.isOnTopOfTile())
+#   Error:       ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28429:  doStateChange(&StateID_Intro);
+#   Error:                               ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28439:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   28452:  matrix.translation(pos.x, pos.y + 0.0, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   28453:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   28455:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   28456:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   28465:   timer = 0;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28468:   StopBGMMusic();
+#   Error:                ^
+#   function call '[daNabbit].StopBGMMusic()' is ambiguous
+#   'StopBGMMusic()'
+#   'StopBGMMusic()'
+### tools/cw/mwcceppc.exe Compiler:
+#   28475:   MakeMarioEnterDemoMode();
+#   Error:                          ^
+#   function call '[daNabbit].MakeMarioEnterDemoMode()' is ambiguous
+#   'MakeMarioEnterDemoMode()'
+#   'MakeMarioEnterDemoMode()'
+### tools/cw/mwcceppc.exe Compiler:
+#   28482:   speed.x = 0.0;
+#   Error:   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28483:   speed.y = 0.0;
+#   Error:   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28489:   Kameck = (daKameckDemo*)createChild(KAMECK_FOR_CASTLE_DEMO, (dStageActor_c*)this, 0, &KamekPos, &KamekRot, 0);
+#   Error:                          ^
+#   expression syntax error
+### tools/cw/mwcceppc.exe Compiler:
+#   28495:   timer++;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28497:   if (timer == 230) { bindAnimChr_and_setUpdateRate("damage01", 1, 0.0, 1.0); }
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28499:   if ((timer > 220) && (timer < 240)) {
+#   Error:        ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28504:   if (timer == 230) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28513:    this->Kameck->doStateChange(&daKameckDemo::StateID_DieFall);
+#   Error:          ^^^^^^
+#   undefined identifier 'Kameck'
+### tools/cw/mwcceppc.exe Compiler:
+#   28516:   if ((timer > 230) && (timer < 350)) {
+#   Error:        ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28523:   if (timer == 230) { bindAnimChr_and_setUpdateRate("down00", 1, 0.0, 1.0); }
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28524:   if (timer == 260) { bindAnimChr_and_setUpdateRate("down02", 1, 0.0, 1.0); }
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28525:   if (timer == 375) { bindAnimChr_and_setUpdateRate("stop01", 1, 0.0, 1.0); }
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28528:   if ((timer > 430) && (done == 0)) {
+#   Error:        ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28529:    u16 amt = (this->direction == 0) ? 0x2800 : 0xD800;
+#   Error:                     ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28530:    done = SmoothRotation(&this->rot.y, amt, 0x2000);
+#   Error:                                 ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   28533:   if (timer == 470) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28535:    doStateChange(&StateID_Walk);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28539:   CleanupKameck(this, Kameck);
+#   Error:                             ^
+#   function call '[daNabbit].CleanupKameck(daNabbit *, {lval} daKameckDemo *)' does not match
+#   'CleanupKameck(int *, int)'
+### tools/cw/mwcceppc.exe Compiler:
+#   28542:   direction = 1; // Heading left.
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28544:   max_speed.x = 50.0;
+#   Error:   ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28567:   speed.x = (this->direction) ? -this->XSpeed : this->XSpeed;
+#   Error:   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28568:   this->max_speed.y = -4.0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28569:   this->speed.y = -4.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28570:   this->y_speed_inc = -0.1875;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28572:   OSReport("Speed: %f / %f", speed.x, max_speed.x);
+#   Error:                              ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28578:   if ((xDistance >  64.0) && (direction == 0)) { doStateChange(&StateID_Turn); }
+#   Error:                               ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28579:   if ((xDistance < -64.0) && (direction == 1)) { doStateChange(&StateID_Turn); }
+#   Error:                               ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28584:     doStateChange(&StateID_Jump);
+#   Error:                                 ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28586:     doStateChange(&StateID_Jump);
+#   Error:                                 ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28591:    doStateChange(&StateID_Turn);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28606:   this->speed.x = (direction) ? 0.5f : -0.5f;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28607:   this->direction ^= 1;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28608:   x_speed_inc = 0.0;
+#   Error:   ^^^^^^^^^^^
+#   undefined identifier 'x_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28616:   u16 amt = (this->direction == 0) ? 0x2800 : 0xD800;
+#   Error:                    ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28617:   int done = SmoothRotation(&this->rot.y, amt, 0x1000);
+#   Error:                                    ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   28620:    this->doStateChange(&StateID_Walk);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   28631:   timer = 0;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28634:   timer++;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28636:   if (timer == 5) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28637:    speed.y = 5.5;
+#   Error:    ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28638:    y_speed_inc = -0.1875;
+#   Error:    ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28641:   if (timer == 15) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28645:   if (timer == 30 && speed.y == 0) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28649:   if (timer > 45 && speed.y == 0) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28650:    speed.x = 0.0f;
+#   Error:    ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28651:    this->doStateChange(&StateID_Walk);
+#   Error:          ^^^^^^^^^^^^^
+#   undefined identifier 'doStateChange'
+### tools/cw/mwcceppc.exe Compiler:
+#   28665:   this->max_speed.x = 0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28666:   this->speed.x = 0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28667:   this->x_speed_inc = 0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'x_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28669:   this->max_speed.y = -2.0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28670:   this->speed.y = -2.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28671:   this->y_speed_inc = -0.1875;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28673:   timer = 0;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28675:   aPhysics.removeFromList();
+#   Error:   ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   28686:   if (speed.y == 0) {
+#   Error:       ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28687:    doStateChange(&StateID_Walk);
+#   Error:                                ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   28691:   aPhysics.addToList();
+#   Error:   ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   28693:   this->rot.y = (direction) ? 0xD800 : 0x2800;
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   28701:   OutroSetup(this);
+#   Error:                  ^
+#   function call '[daNabbit].OutroSetup(daNabbit *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   28702:   aPhysics.removeFromList();
+#   Error:   ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   28704:   this->max_speed.x = 0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28705:   this->speed.x = 0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28706:   this->x_speed_inc = 0;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'x_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28708:   this->max_speed.y = -2.0;
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'max_speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28709:   this->speed.y = -2.0;
+#   Error:         ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28710:   this->y_speed_inc = -0.1875;
+#   Error:         ^^^^^^^^^^^
+#   undefined identifier 'y_speed_inc'
+### tools/cw/mwcceppc.exe Compiler:
+#   28712:   timer = 0;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28718:   timer++;
+#   Error:   ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28720:   if (timer == 30) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28728:   if (timer == 60) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28743:   if (timer == 120) {
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28744:    PlayerVictoryCries(this);
+#   Error:                           ^
+#   function call '[daNabbit].PlayerVictoryCries(daNabbit *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   28747:   if (timer > 300) { ExitStage(WORLD_MAP, 0, BEAT_LEVEL, MARIO_WIPE);
+#   Error:       ^^^^^
+#   undefined identifier 'timer'
+### tools/cw/mwcceppc.exe Compiler:
+#   28756:  VEC3 saveSpeed = speed;
+#   Error:                   ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28757:  int saveDirection = direction;
+#   Error:                      ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28759:  float checkLeft = (direction == 0) ? 8.0f : 104.0f;
+#   Error:                     ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28760:  float checkRight = (direction == 0) ? 104.0f : 8.0f;
+#   Error:                      ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28764:  speed.x = -0.1f;
+#   Error:  ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28765:  speed.y = 0.0f;
+#   Error:  ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28767:  direction = 1; // left
+#   Error:  ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28768:  if (collMgr.calculateAdjacentCollision())
+#   Error:      ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28771:  speed.x = 0.1f;
+#   Error:  ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28772:  speed.y = 0.0f;
+#   Error:  ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28774:  direction = 0; // right
+#   Error:  ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   28775:  if (collMgr.calculateAdjacentCollision())
+#   Error:      ^^^^^^^
+#   undefined identifier 'collMgr'
+### tools/cw/mwcceppc.exe Compiler:
+#   28780:  speed = saveSpeed;
+#   Error:  ^^^^^
+#   undefined identifier 'speed'
+### tools/cw/mwcceppc.exe Compiler:
+#   28781:  direction = saveDirection;
+#   Error:  ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29352: class daGooperBlooper : public daBoss {
+#   Error:                                ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   29427:   this->_vf220(apOther->owner);
+#   Error:         ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   29476:  this->type = this->settings >> 28 & 0xF;
+#   Error:                     ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   29477:  char eventNum = this->settings >> 8 & 0xFFFF;
+#   Error:                        ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   29498:   this->scale = (Vec){oneScale, oneScale, oneScale};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29499:   this->pos.x += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29500:   this->pos.y += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29501:   this->pos.z = -4000;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29502:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29503:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29504:   this->rot.z = 0; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29505:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29509:   this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29510:   this->pos.x += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29511:   this->pos.y += -45.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29512:   this->pos.z = 200;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29513:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29514:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29515:   this->rot.z = 0x4000; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29516:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29520:   this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29521:   this->pos.x += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29522:   this->pos.y += -5.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29523:   this->pos.z = 200;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29524:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29525:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29526:   this->rot.z = 0xC000; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29527:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29531:   this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29532:   this->pos.x += 15.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29533:   this->pos.y += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29534:   this->pos.z = 200;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29535:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29536:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29537:   this->rot.z = 0x8000; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29538:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29542:   this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29543:   this->pos.x += -15.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29544:   this->pos.y += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29545:   this->pos.z = 200;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29546:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29547:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29548:   this->rot.z = 0; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29549:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29553:   this->scale = (Vec){2.0, 2.0, 2.0};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29554:   this->pos.x += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29555:   this->pos.y += 0.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29556:   this->pos.z = 200;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29557:   this->rot.x = 0; // X is vertical axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29558:   this->rot.y = 0; // Y is horizontal axis
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29559:   this->rot.z = 0; // Z is ... an axis >.>
+#   Error:         ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   29560:   this->direction = 1; // Heading left.
+#   Error:         ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   29616:  this->spriteSomeRectX = 6000.0f;
+#   Error:        ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectX'
+### tools/cw/mwcceppc.exe Compiler:
+#   29617:  this->spriteSomeRectY = 6000.0f;
+#   Error:        ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectY'
+### tools/cw/mwcceppc.exe Compiler:
+#   29627:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   29628:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   29633:  doStateChange(&StateID_wait);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   29644:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   29666:   matrix.translation(pos.x, pos.y, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29667:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29671:   matrix.translation(pos.x, pos.y - 300, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29672:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29676:   matrix.translation(pos.x, pos.y + 300, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29677:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29681:   matrix.translation(pos.x + 300, pos.y, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29682:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29686:   matrix.translation(pos.x - 300, pos.y, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29687:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29691:   matrix.translation(pos.x, pos.y, pos.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29692:   matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:   ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29695:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   29696:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29721:   aPhysics.removeFromList();
+#   Error:   ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   29740:   this->pos.x = ClassWithCameraInfo::instance->screenCentreX;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29741:   this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 150.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29746:    this->pos.y += 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29749:    this->pos.y += 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29752:    this->pos.y -= 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29755:    this->pos.y -= 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29764:    this->pos.y -= 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29767:    this->pos.y -= 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29770:    this->pos.y += 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29773:    this->pos.y += 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29782:    this->pos.x -= 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29785:    this->pos.x -= 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29788:    this->pos.x += 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29791:    this->pos.x += 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29800:    this->pos.x += 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29803:    this->pos.x += 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29806:    this->pos.x -= 1;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29809:    this->pos.x -= 3.25;
+#   Error:          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29829:   doStateChange(&StateID_die);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   29845:  this->removeMyActivePhysics();
+#   Error:        ^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'removeMyActivePhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   29849:   OutroSetup(this);
+#   Error:                  ^
+#   function call '[daGooperBlooper].OutroSetup(daGooperBlooper *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   29864:    Vec efPos = {this->pos.x, this->pos.y - 8.0f, this->pos.z + 500.0f};
+#   Error:                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29873:    Vec efPos = {this->pos.x + 8.0f, this->pos.y - 8.0f, this->pos.z + 500.0f};
+#   Error:                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29877:    Vec hitPos = {this->pos.x + 8.0f, this->pos.y, this->pos.z + 500.0f};
+#   Error:                        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29886:    PlayerVictoryCries(this);
+#   Error:                           ^
+#   function call '[daGooperBlooper].PlayerVictoryCries(daGooperBlooper *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   29887:    Vec tempPos = (Vec){this->pos.x, this->pos.y + 10.0f, 5500.0f};
+#   Error:                              ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29888:    BossExplode(this, &tempPos);
+#   Error:                              ^
+#   function call '[daGooperBlooper].BossExplode(daGooperBlooper *, Point3d *)' does not match
+#   'BossExplode(int *, Point3d *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   29898: 600), ClassWithCameraInfo::instance->screenCentreY - 180, this->pos.z + 500};
+#   Error:                                                                 ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   29909:    this->scale = (Vec){oneScale, oneScale, oneScale};
+#   Error:          ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   29914:   this->Delete(1);
+#   Error:         ^^^^^^
+#   undefined identifier 'Delete'
+### tools/cw/mwcceppc.exe Compiler:
+#   30219: class daKingBoo : public daBoss {
+#   Error:                          ^^^^^^
+#   illegal struct/union/enum/class definition
+### tools/cw/mwcceppc.exe Compiler:
+#   30308:  this->_vf220(apOther->owner);
+#   Error:        ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   30311:  this->_vf220(apOther->owner);
+#   Error:        ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   30317:  this->_vf220(apOther->owner);
+#   Error:        ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   30321:  this->_vf220(apOther->owner);
+#   Error:        ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   30338:  this->_vf220(apOther->owner);
+#   Error:        ^^^^^^
+#   undefined identifier '_vf220'
+### tools/cw/mwcceppc.exe Compiler:
+#   30360:  this->timeAttackTrigger = this->settings >> 16 & 0xFFFF;
+#   Error:                                  ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   30362:  char eventNum = this->settings >> 8 & 0xFF;
+#   Error:                        ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   30365:  this->autoscrollSpeed = this->settings >> 28 & 0xFFFF;
+#   Error:                                ^^^^^^^^
+#   undefined identifier 'settings'
+### tools/cw/mwcceppc.exe Compiler:
+#   30387:  this->scale = (Vec){oneScale, oneScale, oneScale};
+#   Error:        ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   30388:  this->pos.x += 0.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30389:  this->pos.y += 0.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30390:  this->pos.z = 4000.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30391:  this->rot.x = 0; // X is vertical axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   30392:  this->rot.y = 0x2800; // Y is horizontal axis
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   30393:  this->rot.z = 0; // Z is ... an axis >.>
+#   Error:        ^^^
+#   undefined identifier 'rot'
+### tools/cw/mwcceppc.exe Compiler:
+#   30394:  this->direction = 1; // Heading left.
+#   Error:        ^^^^^^^^^
+#   undefined identifier 'direction'
+### tools/cw/mwcceppc.exe Compiler:
+#   30408:  this->spriteSomeRectX = 6000.0f;
+#   Error:        ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectX'
+### tools/cw/mwcceppc.exe Compiler:
+#   30409:  this->spriteSomeRectY = 6000.0f;
+#   Error:        ^^^^^^^^^^^^^^^
+#   undefined identifier 'spriteSomeRectY'
+### tools/cw/mwcceppc.exe Compiler:
+#   30419:  this->aPhysics.initWithStruct(this, &HitMeBaby);
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   30420:  this->aPhysics.addToList();
+#   Error:        ^^^^^^^^
+#   undefined identifier 'aPhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   30425:  doStateChange(&StateID_wait);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30436:  acState.execute();
+#   Error:  ^^^^^^^
+#   undefined identifier 'acState'
+### tools/cw/mwcceppc.exe Compiler:
+#   30457:  matrix.translation(pos.x, pos.y, pos.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   30458:  matrix.applyRotationYXZ(&rot.x, &rot.y, &rot.z);
+#   Error:  ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   30460:  bodyModel.setDrawMatrix(matrix);
+#   Error:                          ^^^^^^
+#   undefined identifier 'matrix'
+### tools/cw/mwcceppc.exe Compiler:
+#   30461:  bodyModel.setScale(&scale);
+#   Error:                      ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   30490:  this->pos.x = ClassWithCameraInfo::instance->screenCentreX - 135.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30491:  this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 50.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30517:     doStateChange(&StateID_smallIce);
+#   Error:                                     ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30519:     doStateChange(&StateID_bigIce);
+#   Error:                                   ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30521:     doStateChange(&StateID_rush);
+#   Error:                                 ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30539:   doStateChange(&StateID_die);
+#   Error:                              ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30713:  this->pos.x = ClassWithCameraInfo::instance->screenCentreX - 135.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30714:  this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 50.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30717:   dStageActor_c *spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                                      ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30720:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30721:   spawner->pos.y = this->pos.y + 20;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30726:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30729:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30730:   spawner->pos.y = this->pos.y + 30;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30735:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30738:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30739:   spawner->pos.y = this->pos.y + 10;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30744:   doStateChange(&StateID_wait);
+#   Error:                               ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30760:  this->pos.x = ClassWithCameraInfo::instance->screenCentreX - 135.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30761:  this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 50.0;
+#   Error:        ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30764:   dStageActor_c *spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                                      ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30767:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30768:   spawner->pos.y = this->pos.y + 20;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30773:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30776:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30777:   spawner->pos.y = this->pos.y + 30;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30782:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30785:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30786:   spawner->pos.y = this->pos.y + 10;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30792:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30795:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30796:   spawner->pos.y = this->pos.y + 30;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30801:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30804:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30805:   spawner->pos.y = this->pos.y + 10;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30811:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30814:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30815:   spawner->pos.y = this->pos.y + 30;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30820:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30823:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30824:   spawner->pos.y = this->pos.y + 10;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30830:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30833:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30834:   spawner->pos.y = this->pos.y + 30;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30839:   spawner = CreateActor(118, 0, this->pos, 0, 0);
+#   Error:                                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30842:   spawner->pos.x = this->pos.x + 95;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30843:   spawner->pos.y = this->pos.y + 10;
+#   Error:                          ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30849:   doStateChange(&StateID_wait);
+#   Error:                               ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30908:   this->pos.x = ClassWithCameraInfo::instance->screenCentreX - 135.0 + (this->timer);
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30909:   this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 50.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30914:   this->pos.x = ClassWithCameraInfo::instance->screenCentreX - 135.0 + 150 - ((this->timer - 150) * 2);
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30915:   this->pos.y = ClassWithCameraInfo::instance->screenCentreY - 50.0;
+#   Error:         ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30924:   doStateChange(&StateID_wait);
+#   Error:                               ^
+#   'const' or '&' object/variable needs initializer
+### tools/cw/mwcceppc.exe Compiler:
+#   30936:  this->removeMyActivePhysics();
+#   Error:        ^^^^^^^^^^^^^^^^^^^^^
+#   undefined identifier 'removeMyActivePhysics'
+### tools/cw/mwcceppc.exe Compiler:
+#   30939:  OutroSetup(this);
+#   Error:                 ^
+#   function call '[daKingBoo].OutroSetup(daKingBoo *)' does not match
+#   'OutroSetup(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   30951:   Vec efPos = {this->pos.x, this->pos.y - 8.0f, this->pos.z + 500.0f};
+#   Error:                      ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30960:   Vec efPos = {this->pos.x + 8.0f, this->pos.y - 8.0f, this->pos.z + 500.0f};
+#   Error:                      ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30964:   Vec hitPos = {this->pos.x + 8.0f, this->pos.y, this->pos.z + 500.0f};
+#   Error:                       ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30973:   PlayerVictoryCries(this);
+#   Error:                          ^
+#   function call '[daKingBoo].PlayerVictoryCries(daKingBoo *)' does not match
+#   'PlayerVictoryCries(int *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   30974:   Vec tempPos = (Vec){this->pos.x, this->pos.y + 10.0f, 5500.0f};
+#   Error:                             ^^^
+#   undefined identifier 'pos'
+### tools/cw/mwcceppc.exe Compiler:
+#   30975:   BossExplode(this, &tempPos);
+#   Error:                             ^
+#   function call '[daKingBoo].BossExplode(daKingBoo *, Point3d *)' does not match
+#   'BossExplode(int *, Point3d *)'
+### tools/cw/mwcceppc.exe Compiler:
+#   30996:   this->scale = (Vec){oneScale, oneScale, oneScale};
+#   Error:         ^^^^^
+#   undefined identifier 'scale'
+### tools/cw/mwcceppc.exe Compiler:
+#   34281: tile, ProfileId::PakkunProjectile, "Projectiles", PRarcNameList);
+#   Error:                                                                 ^
+#   function call '[Profile].Profile(dActor_c * (*)(), ProfileId::@enum$24307fasthack_cpp, int,
+#   ProfileId::@enum$24307fasthack_cpp, ProfileId::@enum$24307fasthack_cpp, {lval} const char[12], {lval} const char
+#   *[2])' does not match
+#   'Profile::Profile(dActor_c * (*)(), unsigned int, const SpriteData *, unsigned short, unsigned short, const char
+#   *, const char **, unsigned int)'
+#   'Profile::Profile(const Profile &)'
+### tools/cw/mwcceppc.exe Compiler:
+#   35034: ree, ProfileId::FallingTree, "FallingTree", FallingTreeFileList);
+#   Error:                                                                 ^
+#   function call '[Profile].Profile(dActor_c * (*)(), SpriteId::@enum$24306fasthack_cpp, const SpriteData *,
+#   ProfileId::@enum$24307fasthack_cpp, ProfileId::@enum$24307fasthack_cpp, {lval} const char[12], {lval} const char
+#   *[2])' does not match
+#   'Profile::Profile(dActor_c * (*)(), unsigned int, const SpriteData *, unsigned short, unsigned short, const char
+#   *, const char **, unsigned int)'
+#   'Profile::Profile(const Profile &)'
+### tools/cw/mwcceppc.exe Compiler:
+#   35274: , ProfileId::WindColorMgr, "WindColorMgr", WindColorMgrFileList);
+#   Error:                                                                 ^
+#   function call '[Profile].Profile(dActor_c * (*)(), SpriteId::@enum$24306fasthack_cpp, const SpriteData *,
+#   ProfileId::@enum$24307fasthack_cpp, ProfileId::@enum$24307fasthack_cpp, {lval} const char[13], {lval} const char
+#   *[1])' does not match
+#   'Profile::Profile(dActor_c * (*)(), unsigned int, const SpriteData *, unsigned short, unsigned short, const char
+#   *, const char **, unsigned int)'
+#   'Profile::Profile(const Profile &)'
+
+Errors caused tool to abort.
+BUILD FAILED!
+compiler returned 1 - an error occurred while compiling the fast hack
